@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Тамара Верещак](https://up.htmlacademy.ru/adaptive/22/user/51735).
-* Наставник: Александр Бабченко.
+* Наставник: [Александр Бабченко](https://htmlacademy.ru/profile/babtshe).
 
 ---
 
