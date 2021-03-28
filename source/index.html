@@ -7,38 +7,34 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
+  <header class="page__header">
+    <a class="logo">
+      <img class="logo__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
         alt="Интернет-магазин «Мишка»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="catalog.html">
               Каталог товаров
             </a>
           </li>
           <li class="site-list__item">
-            <a>
+            <a href="blank.html">
               Вязание на заказ
             </a>
           </li>
 
         </ul>
-        <div class="main-nav__list user-list">
-          <a class="user-list__search" href="login.html">
-            <svg class="user-list__search-icon" src="img/search.svg" width="18" height="18"></svg>
+        <div class="main-nav__user-nav">
+          <label>
             Поиск по сайту
-          </a>
-          <!--пока вставила ссылку, переделать на форму? иконка - кнопка?-->
-          <a class="user-list__cart" href="login.html">
-            <svg class="user-list__search-icon" src="img/cart.svg" width="21" height="18"></svg>
-            Корзина:
-            <span>пока пуста</span>
-            <!--как правильно? ведь часть "пока пуста" - изменяемая, это див или что? она меняется js`ом?-->
+            <input class="user-nav__search" type="search" name="search">
+          </label>
+          <a class="user-nav__cart" href="blank.html">
+            Корзина: <span>пока пуста</span>
           </a>
         </div>
       </div>
@@ -47,7 +43,7 @@
   <main class="page-main">
     <section class="main-header">
       <div class="main-header__layout">
-        <img class="main-header__layout--background-image" src="img/house-mobile.jpg" width="568" height="489"
+        <img class="main-header__layout-img" src="img/house-mobile.jpg" width="568" height="489"
           alt="кукольный домик для игрушек">
         <div class="main-header__wrapper">
           <h1>Милые штуки ручной работы для дома</h1>
@@ -56,10 +52,10 @@
       <section class="main-header-menu">
         <h2 class="visually-hidden">Меню - интерьер/игрушки</h2>
         <div class="main-header-menu__item">
-          <div class="main-header-menu__item--first">
-            <!--центровщик должен быть здесь внутри, получается?-->Предметы интерьера
+          <div class="main-header-menu__item item--interior">
+            Предметы интерьера
           </div>
-          <div class="main-header-menu__item--second">Детские игрушки</div>
+          <div class="main-header-menu__item item--toys">Детские игрушки</div>
         </div>
       </section>
     </section>
@@ -69,7 +65,7 @@
         <h3 class="main-product-special__subtitle">товар недели</h3>
         <p class="product__description">Экологически чистая пряжа,
           ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <div class="product-special__description-list">
+        <dl class="product-special__description-list">
           <div class="product-special__item">
             <dt class="product-special__description-term">
               Цвет:
@@ -94,37 +90,37 @@
               15 см
             </dd>
           </div>
-        </div>
+        </dl>
         <div class="product-special__product-image">
           <img src="img/product-triple-set-mobile-1.jpg" width="260" height="315" alt="набор из трех корзин">
         </div>
         <p class="product-special__price">Цена: 990 руб.</p>
-        <a type="button" href="#">Заказать</a>
+        <a class="button" href="#">Заказать</a>
       </div>
 
 
     </section>
     <section class="about">
       <div class="about__wrapper">
-        <h2 class="about-tittle">Коротко о нас</h2>
+        <h2 class="about-title">Коротко о нас</h2>
         <ul class="about__list">
           <li class="about__item">
-            <p class="about__description--flower">Экологически чистые материалы</p>
+            <p class="about__description description--flower">Экологически чистые материалы</p>
           </li>
           <li class="about__item">
-            <p class="about__description--banknote">Скандинавский стиль по российской цене</p>
+            <p class="about__description description--banknote">Скандинавский стиль по российской цене</p>
           </li>
           <li class="about__item">
-            <p class="about__description--heart">Увеличивает лайки на фотографиях</p>
+            <p class="about__description description--heart">Увеличивает лайки на фотографиях</p>
           </li>
           <li class="about__item">
-            <p class="about__description--clew">Связано вручную с любовью и умилением</p>
+            <p class="about__description description--clew">Связано вручную с любовью и умилением</p>
           </li>
           <li class="about__item">
-            <p class="about__description--rocket">Поддержка отечественного производителя</p>
+            <p class="about__description description--rocket">Поддержка отечественного производителя</p>
           </li>
           <li class="about__item">
-            <p class="about__description--present">Поставляется в подарочной упаковке</p>
+            <p class="about__description description--present">Поставляется в подарочной упаковке</p>
           </li>
         </ul>
       </div>
@@ -134,37 +130,38 @@
         <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__list slider-list">
           <li class="reviews__item slider-item">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-              лайков, как
-              у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <div class="reviews__item--author">
-              <cite class="reviews__author-name">Анастасия Красильникова</cite>
-              <p class="reviews__author__email">@misssssiskras</p>
-            </div>
+            <blockquote>
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <div class="reviews__author">
+                <cite class="reviews__author-name">Анастасия Красильникова</cite>
+                <p class="reviews__author-email">@misssssiskras</p>
+              </div>
+            </blockquote>
             <img class="visually-hidden" src="img/review-napkin.jpg" width="350" height="457" alt="салфетка макраме">
           </li>
         </ul>
         <p class="reviews__toggles">
           <button type="button" class="previous slider__toggle">Назад</button>
           <button type="button" class="next slider__toggle">Вперед</button>
-          <a href=# type="button" class="reviews__write-us button" href="form.html">Написать</a>
+          <a href="#" class="reviews__write-us button" href="form.html">Написать</a>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <address class="contacts__adress">
+        <address class="contacts__address">
           г. Санкт-Петербургул. Большая Конюшеннаяд. 19/8, офис 101
         </address>
         <p class="contacts__email">
-          e-mail: <a class="contacts__email email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          e-mail: <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         </p>
       </div>
 
       <div class="contacts__map">
         <img class="contacts__map map" src="img/map-mobile.jpg" width="320" height="454">
       </div>
-      <a type="button" href="#">Напишите нам</a>
+      <a class="button" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">
