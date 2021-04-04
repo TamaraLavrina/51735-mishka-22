@@ -17,15 +17,16 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="catalog.html">
+            <a href="#">
               Каталог товаров
             </a>
           </li>
           <li class="site-list__item">
-            <a href="blank.html">
+            <a href="form.html">
               Вязание на заказ
             </a>
           </li>
+
         </ul>
         <div class="main-nav__user-nav">
           <label>
@@ -42,11 +43,11 @@
   <main class="page-main">
     <section class="page-main__header">
       <div class="page-main__wrapper">
-        <h2 class="page-main__title">Каталог товаров</h2>
+        <h1 class="page-main__title">Каталог товаров</h1>
       </div>
     </section>
     <section class="product-catalog">
-      <h3 class="visually-hidden">Товары</h3>
+      <h2 class="visually-hidden">Товары</h2>
       <div class="product-catalog__wrapper">
         <ul class="product-list">
           <li class="product-item">
@@ -82,15 +83,14 @@
         </ul>
         <section class="manufacture-process">
           <h3 class=>Процесс производства</h3>
-          <!-- читала, что на адаптивном сайте надо ставить iframe вместо video, но у нас в тз ссылки нет, как здесь лучше сделать?-->
           <video class="manufacture-process__video">
             <img class="video__background" src="img/video.jpg" alt="замещающая картинка видеоплеер" width="260"
               height="150">
           </video>
+          <button type="button"><img src="img/button-play-video.svg" alt="проиграть видео" width="101" height="77"></button>
           <p class="manufacture-process__descript">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
-          <!-- по макету вроде кнопка внутри секции с видео, но по логике она относится к товарам-->
           <a class="button" href="#">Сделать заказ</a>
         </section>
       </div>
@@ -99,7 +99,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="logo">
-        <img class="logo__logo-image visually-hidden visually-hidden" src="img/logo-footer.svg" width="102" height="34"
+        <img class="logo__logo-image  visually-hidden" src="img/logo-footer.svg" width="102" height="34"
           alt="логотип интернет магазина «Мишка»">
     </div>
     <div class="page-footer__social social">
