@@ -1,0 +1,12 @@
+.user-nav {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+
+  @include border;
+}
+
+.user-nav__cart {
+  color: $head-text;
+}

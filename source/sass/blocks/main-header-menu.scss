@@ -8,23 +8,23 @@
   flex-wrap: wrap;
   color: $basic-background;
   min-height: 100px;
+}
 
-  &--interior {
-    background-color: $light-back-heads;
-    position: relative;
+.main-header-menu__item--interior {
+  position: relative;
+  background-color: $light-back-heads;
 
-    &::after {
-      content: "";
-      width: 40px;
-      height: 62px;
-      position: absolute;
-      right: 36px;
-      top: 30px;
-      background-image: url("/img/interior.svg");
-    }
+  &::after {
+    width: 40px;
+    height: 62px;
+    position: absolute;
+    right: 36px;
+    top: 30px;
+    background-image: url("../../img/interior.svg");
+    content: "";
   }
+}
 
-  &--toys {
-    background-color: $dark-back;
-  }
+.main-header-menu__item--toys {
+  background-color: $dark-back;
 }

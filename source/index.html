@@ -10,12 +10,14 @@
 
 <body class="page__body">
   <header class="page__header">
-    <a class="logo">
-      <img class="logo__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35"
-        alt="Интернет-магазин «Мишка»">
-    </a>
+    <div class="header-wrapper">
+      <a class="header-wrapper logo">
+        <img class="logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+      </a>
+      <button class="header-wrapper toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
+
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -23,21 +25,23 @@
               Каталог товаров
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="blank.html">
+          <li class="main-nav__item">
+            <a href="form.html">
               Вязание на заказ
             </a>
           </li>
 
         </ul>
         <div class="main-nav__user-nav">
-          <label">
-            Поиск по сайту
-            <input class="user-nav__search" type="search" name="search" placeholder="Поиск по сайту">
+          <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <label>
+              Поиск по сайту
+              <input class="user-nav__search" type="search" name="search" placeholder="Поиск по сайту">
             </label>
-            <a class="user-nav__cart" href="blank.html">
-              Корзина: <span>пока пуста</span>
-            </a>
+          </form>
+          <a class="user-nav__cart" href="blank.html">
+            Корзина: <span>пока пуста</span>
+          </a>
         </div>
       </div>
     </nav>
@@ -48,7 +52,7 @@
         <img class="main-header__layout-img" src="img/house-mobile.jpg" width="568" height="489"
           alt="кукольный домик для игрушек">
         <div class="main-header__wrapper">
-          <h1>Милые штуки ручной работы для дома</h1>
+          <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
         </div>
       </div>
       <section class="main-header-menu">
@@ -62,11 +66,11 @@
         </div>
       </section>
     </section>
-    <section class="main-product-special">
-      <div class="main-product-special__wrapper">
-        <h2 class="main-product-special__product">Вязаные корзинки</h2>
-        <h3 class="main-product-special__subtitle">товар недели</h3>
-        <p class="product__description">Экологически чистая пряжа,
+    <section class="product-special">
+      <div class="product-special__wrapper">
+        <h2 class="product-special__title">Вязаные корзинки</h2>
+        <h3 class="product-special__subtitle">товар недели</h3>
+        <p class="product-special__description">Экологически чистая пряжа,
           ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <dl class="product-special__description-list">
           <div class="product-special__item">
@@ -105,10 +109,9 @@
     </section>
     <section class="about">
       <div class="about__wrapper">
-        <h2 class="about-title">Коротко о нас</h2>
+        <h2 class="about__title">Коротко о нас</h2>
         <ul class="about__list">
           <li class="about__item">
-
             <p class="about__description about__description--flower">Экологически чистые материалы</p>
           </li>
           <li class="about__item">
@@ -151,11 +154,11 @@
         </ul>
 
         <p class="reviews__toggle">
-          <button type="button" class="slider__toggle slider__toggle--previous"></button>
+          <button type="button" class="slider__toggle slider__toggle"></button>
           <button type="button" class="slider__toggle slider__toggle--next"></button>
         </p>
 
-        <a href="#" class="reviews__write-us button" href="form.html">Написать</a>
+        <a class="reviews__write-us button" href="form.html">Написать</a>
 
     </section>
     <section class="contacts">

@@ -1,22 +1,22 @@
-.main-product-special {
+.product-special {
   @include side-margin;
   width: 260px;
 }
 
-.main-product-special__product {
+.product-special__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
 }
 
-.main-product-special__subtitle {
+.product-special__subtitle {
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
   color: $light-back-heads;
 }
 
-.product__description {
+.product-special__description {
   color: $basic-text;
   font-weight: 400;
   line-height: 24px;

@@ -2,15 +2,11 @@
   display: block;
   width: 130px;
   height: 52px;
-  background-color: $basic-background;
   border: 1px solid $border;
-
-  &--previous {
-    box-sizing: border-box;
-    background: url("/img/arrow-left.svg") no-repeat 50% 50%;
-  }
+  box-sizing: border-box;
+  background: url("../../img/arrow-left.svg") 50% 50% no-repeat;
 
   &--next {
-    background: url("/img/arrow-right.svg") no-repeat 50% 50%;
+    background: url("../../img/arrow-right.svg") no-repeat 50% 50%;
   }
 }
