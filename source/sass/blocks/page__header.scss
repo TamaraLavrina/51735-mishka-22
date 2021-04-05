@@ -5,3 +5,13 @@
 
   @include border;
 }
+
+.page__header .logo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 22px 116px;
+}
+
+.page__header .main-nav__toggle {
+  display: block;
+}
