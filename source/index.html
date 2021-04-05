@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body class="page__body">
@@ -29,13 +31,13 @@
 
         </ul>
         <div class="main-nav__user-nav">
-          <label>
+          <label">
             Поиск по сайту
-            <input class="user-nav__search" type="search" name="search">
-          </label>
-          <a class="user-nav__cart" href="blank.html">
-            Корзина: <span>пока пуста</span>
-          </a>
+            <input class="user-nav__search" type="search" name="search" placeholder="Поиск по сайту">
+            </label>
+            <a class="user-nav__cart" href="blank.html">
+              Корзина: <span>пока пуста</span>
+            </a>
         </div>
       </div>
     </nav>
@@ -149,22 +151,28 @@
         </ul>
 
         <p class="reviews__toggle">
-          <button type="button" class="slider__toggle slider__toggle--previous">Назад</button>
-          <button type="button" class="slider__toggle slider__toggle--next">Вперед</button>
+          <button type="button" class="slider__toggle slider__toggle--previous"></button>
+          <button type="button" class="slider__toggle slider__toggle--next"></button>
+        </p>
 
-          <a href="#" class="reviews__write-us button" href="form.html">Написать</a>
-      </div>
+        <a href="#" class="reviews__write-us button" href="form.html">Написать</a>
+
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <address class="contacts__address">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__item">
+          <p class="contacts__head">
+            e-mail:</p>
+          <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </div>
+        <div class="contacts__item">
+          <p class="contacts__head">адрес:</p>
+          <address class="contacts__address">
+            г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
+          </address>
+        </div>
 
-          г. Санкт-Петербургул. Большая Конюшенная д. 19/8, офис 101
-
-        </address>
-        <p class="contacts__email">
-          e-mail: <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </p>
       </div>
 
       <div class="contacts__map">
@@ -176,11 +184,9 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="logo">
-
         <img class="logo__logo-image visually-hidden" src="img/logo-footer.svg" width="102" height="34"
-
           alt="логотип интернет магазина «Мишка»">
-      </div>
+      </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -202,6 +208,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img
             src="img/htmlacademy-logo.svg"></a>
       </div>
+
     </div>
   </footer>
 

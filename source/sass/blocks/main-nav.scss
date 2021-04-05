@@ -1,0 +1,22 @@
+.main-nav {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  text-decoration: none;
+
+  a {
+    color: $head-text;
+  }
+}
+
+.main-nav__wrapper {
+  text-align: center;
+
+  @include border;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding-left: 0;
+}

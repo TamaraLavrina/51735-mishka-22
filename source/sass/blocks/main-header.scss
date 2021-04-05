@@ -1,0 +1,18 @@
+.main-header {
+  margin: auto;
+  color: $head-text;
+
+  &__layout {
+    width: 320px;
+    overflow: hidden;
+  }
+}
+
+.main-header h1 {
+  display: block;
+  width: 260px;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}

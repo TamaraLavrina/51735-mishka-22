@@ -1,0 +1,16 @@
+.slider__toggle {
+  display: block;
+  width: 130px;
+  height: 52px;
+  background-color: $basic-background;
+  border: 1px solid $border;
+
+  &--previous {
+    box-sizing: border-box;
+    background: url("/img/arrow-left.svg") no-repeat 50% 50%;
+  }
+
+  &--next {
+    background: url("/img/arrow-right.svg") no-repeat 50% 50%;
+  }
+}

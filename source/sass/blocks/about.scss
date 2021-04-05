@@ -1,0 +1,39 @@
+.about__wrapper {
+  @include side-margin;
+}
+
+.about-title {
+  @include title;
+}
+
+.about__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about__item {
+  padding-top: 83px;
+  position: relative;
+}
+
+.about__description {
+  &--flower::before {
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    width: 33px;
+    height: 38px;
+    background-image: url("/img/icon-flower.svg");
+    content: " ";
+  }
+
+  &--present::before {
+    position: absolute;
+    left: 3px;
+    top: 55px;
+    width: 33px;
+    height: 32px;
+    background-image: url("/img/icon-present.svg");
+    content: " ";
+  }
+}

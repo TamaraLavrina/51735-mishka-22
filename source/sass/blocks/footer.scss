@@ -1,0 +1,36 @@
+.page-footer {
+  background-color: $footer-background-wavy;
+}
+
+.page-footer__wrapper {
+  width: 260px;
+
+  @include side-margin;
+  padding-top: 25px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__social {
+  @include border-b;
+}
+
+.social__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  width: 142px;
+  justify-content: space-between;
+}
+
+.page-footer__copyright {
+  width: 182px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 22px 23px;
+}

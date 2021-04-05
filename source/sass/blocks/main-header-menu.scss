@@ -1,0 +1,30 @@
+.main-header-menu {
+  display: block;
+}
+
+.main-header-menu__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: $basic-background;
+  min-height: 100px;
+
+  &--interior {
+    background-color: $light-back-heads;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 40px;
+      height: 62px;
+      position: absolute;
+      right: 36px;
+      top: 30px;
+      background-image: url("/img/interior.svg");
+    }
+  }
+
+  &--toys {
+    background-color: $dark-back;
+  }
+}
