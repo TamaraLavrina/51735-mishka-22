@@ -4,9 +4,9 @@
   height: 52px;
   border: 1px solid $border;
   box-sizing: border-box;
-  background: url("../../img/arrow-left.svg") 50% 50% no-repeat;
+  background: url("../img/arrow-left.svg") 50% 50% no-repeat;
 
   &--next {
-    background: url("../../img/arrow-right.svg") no-repeat 50% 50%;
+    background: url("../img/arrow-right.svg") no-repeat 50% 50%;
   }
 }
