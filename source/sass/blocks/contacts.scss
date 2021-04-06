@@ -1,5 +1,4 @@
 .contacts__wrapper {
-
   @include side-margin;
 }
 
@@ -23,4 +22,13 @@
 
 .contacts__address {
   font-style: normal;
+}
+
+.contacts_button {
+  margin-top: 41px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin: 56px auto;
+  }
 }
