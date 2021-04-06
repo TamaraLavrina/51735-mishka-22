@@ -9,58 +9,57 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header">
-    <div class="header-wrapper">
-      <a class="header-wrapper__logo logo">
-        <img class="logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
-      </a>
-      <button class="header-wrapper__toggle toggle" type="button"><span class="visually-hidden">Открыть
-          меню</span></button>
-    </div>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">
-              Вязание на заказ
-            </a>
-          </li>
-        </ul>
-        <div class="main-nav__user-nav">
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
-            <label>
-              Поиск по сайту
-              <input class="user-nav__search" type="search" name="search" placeholder="Поиск по сайту">
-            </label>
-          </form>
-          <a class="user-nav__cart" href="blank.html">
-            Корзина: <span>пока пуста</span>
+  <header class="page-header">
+    <a class="page-header__logo logo">
+      <img class="logo__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+    </a>
+    <button class="page-header__toggle-navigate toggle-navigate" type="button">
+      <span class="visually-hidden">
+        Открыть меню
+      </span>
+    </button>
+    <nav class="page-header__main-nav main-nav ">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="catalog.html">
+            Каталог товаров
           </a>
-        </div>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">
+            Вязание на заказ
+          </a>
+        </li>
+      </ul>
+      <div class="main-nav__user-nav">
+        <a class="user-nav__search">
+          Поиск по сайту
+        </a>
+        <a class="user-nav__cart" href="blank.html">
+          Корзина:
+          <span>пока пуста</span>
+        </a>
       </div>
     </nav>
   </header>
   <main class="page-main">
     <section class="main-header">
       <div class="main-header__layout">
-        <img class="main-header__layout-img" src="img/house-mobile.jpg" width="568" height="489"
-          alt="кукольный домик для игрушек">
+        <img class="main-header__layout-img" src="img/house-mobile.jpg" width="568" height="489" alt="кукольный домик для игрушек">
         <div class="main-header__wrapper">
           <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
         </div>
       </div>
       <section class="main-header-menu">
         <h2 class="visually-hidden">Меню - интерьер/игрушки</h2>
-        <div class="main-header-menu__item">
+        <div class="main-header-menu__elements">
+          <!-- вот тут по идеи должны быть разные классы для обертки и для блока внутри, в общем я не уверена в правильности (elements/item)-->
           <div class="main-header-menu__item main-header-menu__item--interior">
             Предметы интерьера
           </div>
-          <div class="main-header-menu__item main-header-menu__item--toys">Детские игрушки</div>
+          <div class="main-header-menu__item main-header-menu__item--toys">
+            Детские игрушки
+          </div>
         </div>
       </section>
     </section>
@@ -100,7 +99,7 @@
           <img src="img/product-triple-set-mobile-1.jpg" width="260" height="315" alt="набор из трех корзин">
         </div>
         <p class="product-special__price">Цена: 990 руб.</p>
-        <a class="button" href="#">Заказать</a>
+        <a class="product-special__button button" href="#">Заказать</a>
       </div>
     </section>
     <section class="about">
@@ -147,8 +146,8 @@
           </li>
         </ul>
         <p class="reviews__toggle">
-          <button type="button" class="slider__toggle slider__toggle"></button>
-          <button type="button" class="slider__toggle slider__toggle--next"></button>
+          <button type="button" class="slider__toggle reviews__toggle--previous" aria-label="Назад"></button>
+          <button type="button" class="slider__toggle reviews__toggle--next" aria-label="Вперед"></button>
         </p>
         <a class="reviews__write-us button" href="form.html">Написать</a>
     </section>
@@ -170,12 +169,12 @@
       <div class="contacts__map">
         <img class="contacts__map map" src="img/map-mobile.jpg" width="320" height="454">
       </div>
-      <a class="contacts_button button" href="#">Напишите нам</a>
+      <a class="contacts__button button" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="logo">
+      <a class="page-footer__logo">
         <img class="logo__logo-image visually-hidden" src="img/logo-footer.svg" width="102" height="34"
           alt="логотип интернет магазина «Мишка»">
       </a>

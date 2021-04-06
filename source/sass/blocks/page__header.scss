@@ -4,3 +4,18 @@
 
   @include border;
 }
+
+.page__header__logo {
+  display: flex;
+  height: 79px;
+  padding: 0 117px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    height: 89px;
+  }
+}
+
+.page__header__toggle {
+  display: flex;
+}
