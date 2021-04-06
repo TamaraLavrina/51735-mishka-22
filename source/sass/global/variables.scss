@@ -10,6 +10,11 @@ $basic-text:#444444;
 $head-text:#000000;
 $font: "Open Sans";
 
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$mobile-width-only: 767px;
+
 
 @mixin border {
   border-top: 1px solid $border;
