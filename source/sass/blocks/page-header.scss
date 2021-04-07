@@ -1,0 +1,21 @@
+.page-header {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.page-header__logo {
+  height: 79px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    height: 89px;
+  }
+}
+
+.page-header__toggle-navigate {
+  display: block;
+}
+
+.page-header__main-nav {
+  display: block;
+}

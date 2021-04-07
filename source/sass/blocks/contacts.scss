@@ -1,0 +1,34 @@
+.contacts__wrapper {
+  @include side-margin;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.contacts__item {
+  font-size: 14px;
+  display: flex;
+  width: 260px;
+  align-items: flex-start;
+}
+
+.contacts__head {
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts_button {
+  margin-top: 41px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin: 56px auto;
+  }
+}

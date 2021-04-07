@@ -1,0 +1,20 @@
+.page-footer {
+  background-color: $footer-background-wavy;
+}
+
+.page-footer__wrapper {
+  @include side-margin;
+  padding-top: 25px;
+}
+
+.page-footer__social {
+  border-bottom: 1px solid $border;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 22px 23px;
+}

@@ -1,0 +1,40 @@
+.main-header-menu {
+  display: block;
+}
+
+.main-header-menu__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: $basic-background;
+  min-height: 100px;
+
+  &::after {
+    width: 40px;
+    height: 62px;
+    position: absolute;
+    right: 36px;
+    top: 30px;
+    content: "";
+  }
+}
+
+.main-header-menu__item--interior {
+  position: relative;
+  background-color: $light-back-heads;
+
+  &::after {
+    background-image: url("../img/interior.svg");
+  }
+}
+
+.main-header-menu__item--toys {
+  background-color: $dark-back;
+  position: relative;
+
+  &::after {
+    background-image: url("../img/toy.svg");
+    width: 60px;
+    height: 60px;
+  }
+}

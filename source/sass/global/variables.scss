@@ -1,0 +1,27 @@
+$basic-background: #ffffff;
+$basic-font: #000000;
+$light-back-heads:#63d1bb;
+$dark-back:#56c3b2;
+$underline:#62d1ba;
+$border:#e5e5e5;
+$footer-background-wavy:#f1f1f1;
+$button-border:#ececec;
+$basic-text:#444444;
+$head-text:#000000;
+$font-family: "Open Sans", "Arial", sans-serif;
+
+// Breakpoints
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$mobile-width-only: 767px;
+
+@mixin side-margin {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@mixin title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 25px;
+}

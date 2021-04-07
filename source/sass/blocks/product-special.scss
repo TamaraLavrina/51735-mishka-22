@@ -1,0 +1,38 @@
+.product-special {
+  @include side-margin;
+}
+
+.product-special__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.product-special__subtitle {
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $light-back-heads;
+}
+
+.product-special__description {
+  color: $basic-text;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.product-special__description-list {
+  color: $basic-text;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.product-special__item {
+  border-bottom: 1px solid $border;
+}
+
+.product-special__price {
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+}
