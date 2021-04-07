@@ -8,11 +8,6 @@
   flex-wrap: wrap;
   color: $basic-background;
   min-height: 100px;
-}
-
-.main-header-menu__item--interior {
-  position: relative;
-  background-color: $light-back-heads;
 
   &::after {
     width: 40px;
@@ -20,11 +15,26 @@
     position: absolute;
     right: 36px;
     top: 30px;
-    background-image: url("../img/interior.svg");
     content: "";
+  }
+}
+
+.main-header-menu__item--interior {
+  position: relative;
+  background-color: $light-back-heads;
+
+  &::after {
+    background-image: url("../img/interior.svg");
   }
 }
 
 .main-header-menu__item--toys {
   background-color: $dark-back;
+  position: relative;
+
+  &::after {
+    background-image: url("../img/toy.svg");
+    width: 60px;
+    height: 60px;
+  }
 }

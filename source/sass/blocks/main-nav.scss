@@ -7,13 +7,15 @@
   outline-offset: -5px;
 }
 
-.main-nav__wrapper {
-  text-align: center;
-
-  @include border;
-}
-
 .main-nav__list {
   list-style: none;
   padding-left: 0;
+}
+
+.main-nav__item {
+  display: block;
+}
+
+.main-nav__user-nav {
+  display: block;
 }

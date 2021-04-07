@@ -1,6 +1,4 @@
 .reviews {
-  width: 260px;
-
   @include side-margin;
 }
 
@@ -36,5 +34,19 @@
 }
 
 .reviews__toggle {
-  display: flex;
+  display: block;
+  width: 130px;
+  height: 52px;
+  border: 1px solid $border;
+  box-sizing: border-box;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  &--next {
+    background-image: url("../img/arrow-right.svg");
+  }
+
+  &--previous {
+    background-image: url("../img/arrow-left.svg");
+  }
 }

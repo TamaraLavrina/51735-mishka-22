@@ -8,25 +8,16 @@ $footer-background-wavy:#f1f1f1;
 $button-border:#ececec;
 $basic-text:#444444;
 $head-text:#000000;
-$font: "Open Sans";
+$font: "Open Sans", "Arial", sans-serif;
 
-// Viewports
+// Breakports
 $tablet-width: 768px;
 $desktop-width: 1150px;
 $mobile-width-only: 767px;
 
-
-@mixin border {
-  border-top: 1px solid $border;
-}
-
 @mixin side-margin {
   margin-left: 30px;
   margin-right: 30px;
-}
-
-@mixin border-b {
-  border-bottom: 1px solid $border;
 }
 
 @mixin title {
