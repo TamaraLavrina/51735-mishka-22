@@ -18,22 +18,62 @@
 
 .about__description {
   &--flower::before {
+    content: " ";
     position: absolute;
     left: 5px;
     top: 15px;
     width: 33px;
     height: 38px;
     background-image: url("../img/icon-flower.svg");
-    content: " ";
   }
 
   &--present::before {
+    content: " ";
     position: absolute;
     left: 3px;
     top: 55px;
     width: 33px;
     height: 32px;
     background-image: url("../img/icon-present.svg");
+  }
+
+  &--banknote::before {
     content: " ";
+    position: absolute;
+    left: 3px;
+    top: 55px;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-banknote.svg");
+  }
+
+  &--heart::before {
+    content: " ";
+    position: absolute;
+    left: 3px;
+    top: 55px;
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/icon-heart.svg");
+  }
+
+  &--clew::before {
+    content: " ";
+    position: absolute;
+    left: 3px;
+    top: 55px;
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/icon-clew.svg");
+  }
+
+  &--rocket::before {
+    content: " ";
+    position: absolute;
+    left: 3px;
+    top: 55px;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/icon-rocket.svg");
   }
 }

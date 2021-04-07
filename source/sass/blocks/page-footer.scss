@@ -7,20 +7,8 @@
   padding-top: 25px;
 }
 
-.social {
-  display: flex;
-  justify-content: center;
-}
-
 .page-footer__social {
   border-bottom: 1px solid $border;
-}
-
-.social__list {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-  justify-content: space-between;
 }
 
 .page-footer__copyright {
