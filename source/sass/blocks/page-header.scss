@@ -3,6 +3,10 @@
   outline-offset: -5px;
 }
 
+.page-header__wrapper {
+  @include side-margin;
+}
+
 .page-header__logo {
   height: 79px;
 

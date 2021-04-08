@@ -1,0 +1,9 @@
+.form-area__wrapper {
+  @include side-margin;
+}
+
+.form-area__intro {
+  margin-top: 17px;
+  font-size: 13px;
+  line-height: 24px;
+}

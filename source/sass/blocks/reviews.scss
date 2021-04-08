@@ -41,7 +41,8 @@
   display: block;
   width: 50%;
   height: 52px;
-  border: 1px solid $border;
+  border: 1px solid $color-lightgrey-300;
+  background-color: inherit;
 
   &--next {
     background-image: url("../img/arrow-right.svg");

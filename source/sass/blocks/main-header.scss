@@ -1,10 +1,14 @@
 .main-header {
   margin: auto;
-  color: $head-text;
+  color: $color-black-600;
 }
 
 .main-header__layout {
   overflow: hidden;
+}
+
+.main-header__wrapper {
+  @include side-margin;
 }
 
 .main-header__title {

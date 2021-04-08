@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  color: $basic-background;
+  color: $color-white-00;
   min-height: 100px;
 
   &::after {
@@ -21,7 +21,7 @@
 
 .main-header-menu__item--interior {
   position: relative;
-  background-color: $light-back-heads;
+  background-color: $primary-color-200;
 
   &::after {
     background-image: url("../img/interior.svg");
@@ -29,12 +29,24 @@
 }
 
 .main-header-menu__item--toys {
-  background-color: $dark-back;
+  background-color: $primary-color-500;
   position: relative;
 
   &::after {
     background-image: url("../img/toy.svg");
     width: 60px;
     height: 60px;
+  }
+}
+
+.main-header-menu__link {
+  padding: 24px 160px 31px 30px;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-white-00;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 167px 34px 36px;
   }
 }

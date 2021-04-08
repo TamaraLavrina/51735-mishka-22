@@ -11,22 +11,29 @@
 .contacts__item {
   font-size: 14px;
   display: flex;
-  width: 260px;
   align-items: flex-start;
 }
 
 .contacts__head {
   justify-content: flex-start;
   margin: 0;
+  margin-right: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 33px;
+  }
 }
 
 .contacts__address {
   font-style: normal;
 }
 
-.contacts_button {
-  margin-top: 41px;
-  margin-bottom: 39px;
+.contacts__map {
+  overflow: hidden;
+}
+
+.contacts__button {
+  margin: 41px 30px 39px;
 
   @media (min-width: $tablet-width) {
     margin: 56px auto;
