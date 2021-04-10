@@ -1,0 +1,46 @@
+.fields__list {
+  list-style: none;
+  padding-left: 60px;
+}
+
+.fields__list--no-padding {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.fields__input--radio + label::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: -5px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $color-black-900;
+  border-radius: 50%;
+}
+
+.fields__input--checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -48px;
+  width: 16px;
+  height: 16px;
+  background-color: $primary-color-300;
+  border-radius: 50%;
+}
+
+.fields__input--checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: -5px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid $color-black-900;
+}
+
+.fields__input + label:hover::before {
+  border: 2px solid $primary-color-300;
+}

@@ -1,0 +1,14 @@
+.field-item__label {
+  display: block;
+  line-height: 18px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  position: relative;
+  user-select: none;
+}
+
+.fieldset__legend-name--short::after {
+  width: 182px;
+  left: 78px;
+}
