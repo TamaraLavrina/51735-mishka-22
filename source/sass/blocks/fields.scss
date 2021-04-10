@@ -8,7 +8,6 @@
   padding-left: 0;
 }
 
-
 .fields__input--radio + label::before {
   content: "";
   position: absolute;
@@ -52,6 +51,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 .fields__input + label:hover::before {
   border: 2px solid $primary-color-300;
 }
