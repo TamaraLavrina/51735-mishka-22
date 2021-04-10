@@ -20,7 +20,7 @@
   border-radius: 50%;
 }
 
-.fields__input--checkbox:checked + label::after {
+.fields__input--radio:checked + label::after {
   content: "";
   position: absolute;
   top: 7px;
@@ -41,6 +41,17 @@
   border: 2px solid $color-black-900;
 }
 
+.fields__input--checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -52px;
+  width: 24px;
+  height: 17px;
+  background-image: url("../img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 .fields__input + label:hover::before {
   border: 2px solid $primary-color-300;
 }
