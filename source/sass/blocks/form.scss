@@ -1,0 +1,17 @@
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: $color-lightgrey-200;
+  }
+}
+
+.form__button {
+  margin-top: 36px;
+  margin-bottom: 55px;
+}
+
+.form__type {
+  @include side-margin;
+  margin-top: 29px;
+}

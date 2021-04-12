@@ -1,13 +1,18 @@
-$basic-background: #ffffff;
-$basic-font: #000000;
-$light-back-heads:#63d1bb;
-$dark-back:#56c3b2;
-$underline:#62d1ba;
-$border:#e5e5e5;
-$footer-background-wavy:#f1f1f1;
-$button-border:#ececec;
-$basic-text:#444444;
-$head-text:#000000;
+$color-white-00: #ffffff;
+$color-lightgrey-200:#f1f1f1;
+$color-lightgrey-250:#ececec;
+$color-lightgrey-300:#e5e5e5;
+
+//black
+$color-black-600:#444444;
+$color-black-900: #000000;
+//color
+$primary-color-200:#63d1bb;
+$primary-color-300:#62d1ba;
+$primary-color-500:#56c3b2;
+
+
+//font
 $font-family: "Open Sans", "Arial", sans-serif;
 
 // Breakpoints

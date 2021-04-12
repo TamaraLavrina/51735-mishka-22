@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: $footer-background-wavy;
+  background-color: $color-lightgrey-200;
 }
 
 .page-footer__wrapper {
@@ -7,8 +7,12 @@
   padding-top: 25px;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
 .page-footer__social {
-  border-bottom: 1px solid $border;
+  border-bottom: 1px solid $color-lightgrey-300;
 }
 
 .page-footer__copyright {
