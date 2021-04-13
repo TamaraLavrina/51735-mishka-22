@@ -10,3 +10,11 @@
   padding-left: 0;
   justify-content: space-between;
 }
+
+.social__item {
+  margin-right: 40px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
