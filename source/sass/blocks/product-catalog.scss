@@ -1,0 +1,8 @@
+.product-catalog {
+  @include side-margin;
+}
+
+.product-catalog__product-list {
+  list-style: none;
+  padding: 0;
+}
