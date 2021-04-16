@@ -113,6 +113,8 @@
 }
 
 .product-special__product-image {
+  overflow: hidden;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-column: 3/5;
