@@ -3,17 +3,23 @@
   font-size: 17px;
   line-height: 24px;
   text-decoration: none;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
+  border-top: 1px solid $color-lightgrey-300;
 }
 
 .main-nav__list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .main-nav__item {
   display: block;
+  text-align: center;
+  padding-top: 29px;
+  padding-bottom: 27px;
+  border-top: 1px solid $color-lightgrey-300;
+  color: $color-black-900;
 }
 
 .main-nav__user-nav {

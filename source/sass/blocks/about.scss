@@ -9,11 +9,32 @@
 .about__list {
   list-style: none;
   padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .about__item {
   padding-top: 83px;
   position: relative;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .about__item {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about__item:nth-child(2n) {
+    order: 1;
+  }
 }
 
 .about__description {

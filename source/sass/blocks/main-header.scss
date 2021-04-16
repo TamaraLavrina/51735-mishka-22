@@ -5,6 +5,7 @@
 
 .main-header__layout {
   overflow: hidden;
+  position: relative;
 }
 
 .main-header__wrapper {
@@ -16,4 +17,17 @@
   line-height: 30px;
   font-weight: 700;
   text-align: center;
+  position: absolute;
+  top: 73px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
