@@ -1,15 +1,31 @@
 .main-header {
   margin: auto;
   color: $color-black-600;
+  background-color: $color-lightgrey-150;
+  background-image: url("../img/house.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main-header__layout {
-  overflow: hidden;
-  position: relative;
-}
+  padding-bottom: 120px;
+  padding-top: 73px;
+  max-width: 260px;
+  margin-right: auto;
+  margin-left: auto;
 
-.main-header__wrapper {
-  @include side-margin;
+  @media (min-width: $tablet-width) {
+    max-width: 668px;
+    padding-bottom: 491px;
+    padding-top: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+    padding-bottom: 474px;
+    padding-top: 158px;
+  }
 }
 
 .main-header__title {
@@ -17,8 +33,6 @@
   line-height: 30px;
   font-weight: 700;
   text-align: center;
-  position: absolute;
-  top: 73px;
   margin: auto;
 
   @media (min-width: $tablet-width) {

@@ -5,10 +5,23 @@
 .page-footer__wrapper {
   @include side-margin;
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 668px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .page-footer__social {
@@ -21,4 +34,8 @@
   align-items: center;
   margin: auto;
   padding: 22px 23px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

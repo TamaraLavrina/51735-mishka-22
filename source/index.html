@@ -10,62 +10,65 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo logo">
+    <button class="page-header__toggle-navigate toggle-navigate" type="button">
+      <span class="visually-hidden">
+        Открыть меню
+      </span>
+    </button>
+    <nav class="page-header__main-nav main-nav">
+      <a class="main-nav__logo logo">
         <img class="logo__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
       </a>
-      <button class="page-header__toggle-navigate toggle-navigate" type="button">
-        <span class="visually-hidden">
-          Открыть меню
-        </span>
-      </button>
-      <nav class="page-header__main-nav main-nav ">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">
-              Вязание на заказ
-            </a>
-          </li>
-        </ul>
-        <div class="main-nav__user-nav user-nav">
-          <a class="user-nav__search">
-            Поиск по сайту
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="catalog.html">
+            Каталог товаров
           </a>
-          <a class="user-nav__cart" href="blank.html">
-            Корзина:
-            <span>пока пуста</span>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">
+            Вязание на заказ
           </a>
-        </div>
-      </nav>
+        </li>
+      </ul>
+      <div class="main-nav__user-nav user-nav">
+        <a class="user-nav__search">
+          Поиск по сайту
+        </a>
+        <a class="user-nav__cart" href="blank.html">
+          Корзина:
+          <span>пока пуста</span>
+        </a>
+      </div>
+    </nav>
+    <div class="page-header__info header-info">
+      <ul class="header-info__list">
+        <li class="header-info__item">Новые поступления</li>
+        <li class="header-info__item">Распродажа</li>
+      </ul>
+      <p class="header-info__comment">Бесплатная доставка по России</p>
+    </div>
     </div>
   </header>
   <main class="page-main">
     <section class="main-header">
       <div class="main-header__layout">
-        <img class="main-header__layout-img" src="img/house.jpg" width="568" height="489"
-          alt="кукольный домик для игрушек">
-        <div class="main-header__wrapper">
-          <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
-        </div>
+        <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
       </div>
       <section class="main-header-menu">
         <h2 class="visually-hidden">Меню - интерьер/игрушки</h2>
         <div class="main-header-menu__list">
-          <div class="main-header-menu__item main-header-menu__item--interior">
-            <a href="#" class="main-header-menu__link">
+          <a href="#" class="main-header-menu__link main-header-menu__link--interior">
+            <span class="main-header-menu__text">
               Предметы интерьера
-            </a>
-          </div>
-          <div class="main-header-menu__item main-header-menu__item--toys">
-            <a href="#" class="main-header-menu__link">
+            </span>
+          </a>
+          <a href="#" class="main-header-menu__link main-header-menu__link--toys">
+            <span class="main-header-menu__text">
               Детские игрушки
-            </a>
-          </div>
+            </span>
+          </a>
+
         </div>
       </section>
     </section>
@@ -109,7 +112,8 @@
         </div>
         <!--контейнер для картинок-->
         <div class="product-special__product-image product-image">
-          <img class="product-image" src="img/product-triple-set-mobile-1.jpg" width="260" height="315" alt="набор из трех корзин">
+          <img class="product-image" src="img/product-triple-set-mobile-1.jpg" width="260" height="315"
+            alt="набор из трех корзин">
         </div>
         <!--покупка - цена и кнопка-->
         <div class="product-special__price-container">
@@ -144,7 +148,7 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="rewiews__wrapper slider">
+      <div class="reviews__wrapper slider">
         <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__list slider-list">
           <li class="reviews__item slider-item">

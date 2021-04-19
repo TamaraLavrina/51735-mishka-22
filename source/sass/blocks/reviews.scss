@@ -1,14 +1,62 @@
 .reviews {
+  @media (min-width: $tablet-width) {
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-image: url("../img/review-napkin.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+    //я не додумалась .. видимо фото-фон дрлжен переместиться во враппер
+  }
+}
+
+.reviews__wrapper {
   @include side-margin;
+  padding-top: 83px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    padding-left: 174px;
+  }
 }
 
 .reviews__title {
   @include title;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .reviews__list {
   list-style: none;
   padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
 }
 
 .reviews__item {
@@ -35,6 +83,13 @@
 
 .reviews__toggles {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    max-width: 175px;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    justify-content: end;
+  }
 }
 
 .reviews__toggle {
@@ -52,5 +107,18 @@
 
   &--previous {
     background-image: url("../img/arrow-left.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.reviews__write-us {
+  @media (min-width: $tablet-width) {
+    max-width: 175px;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 }
