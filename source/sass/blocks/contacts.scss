@@ -4,6 +4,7 @@
 
 .contacts__wrapper {
   @include side-margin;
+  max-width: 260px;
 
   @media (min-width: $tablet-width) {
     display: flex;

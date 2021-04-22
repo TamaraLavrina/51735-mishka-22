@@ -8,6 +8,7 @@
   @media (min-width: $desktop-width) {
     margin-left: auto;
     margin-right: auto;
+    background-image: none;
     //я не додумалась .. видимо фото-фон дрлжен переместиться во враппер
   }
 }
@@ -28,6 +29,9 @@
   @media (min-width: $desktop-width) {
     max-width: 1050px;
     padding-left: 174px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-image: url("../img/review-napkin.jpg");
   }
 }
 

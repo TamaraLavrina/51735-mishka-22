@@ -1,6 +1,7 @@
 .about__wrapper {
   @include side-margin;
   padding-top: 70px;
+  max-width: 260px;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
@@ -21,33 +22,23 @@
   list-style: none;
   padding-left: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
 
-  @media (max-width: $mobile-width-only) {
-    display: flex;
-    flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 40px;
   }
 }
 
 .about__item {
-  max-width: 325px;
   padding-top: 83px;
   position: relative;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 70px;
-  }
 }
 
-.about__item:nth-child(2n) {
-  @media (min-width: $tablet-width) {
-    margin-right: 0;
-    //зря я наверное обнулила, но видимо лучше оставить на пиксель перфект - там и подгоню
-  }
-}
 
 @media (max-width: $mobile-width-only) {
   .about__item {
