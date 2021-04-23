@@ -1,25 +1,48 @@
-.main-header-menu {
-  display: block;
-}
+.main-header-menu__list {
+  // по идеи он же упирается в края, значит ему не задавать максимальную ширину?  max-width: 320px;
 
-.main-header-menu__item {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  color: $color-white-00;
-  min-height: 100px;
+  @media (min-width: $tablet-width) {
+    max-width: 668px;
+    margin: 0 auto;
+    display: flex;
+  }
 
-  &::after {
-    width: 40px;
-    height: 62px;
-    position: absolute;
-    right: 36px;
-    top: 30px;
-    content: "";
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
   }
 }
 
-.main-header-menu__item--interior {
+.main-header-menu__link {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-white-00;
+  font-weight: 700;
+
+
+  &::after {
+    width: 60px;
+    height: 62px;
+    position: absolute;
+    left: calc(50% + 73px);
+    top: 31px;
+    content: "";
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    width: 300px;
+
+    &::after {
+      right: 35px;
+      left: auto;
+    }
+  }
+}
+
+.main-header-menu__link--interior {
   position: relative;
   background-color: $primary-color-200;
 
@@ -28,25 +51,28 @@
   }
 }
 
-.main-header-menu__item--toys {
+.main-header-menu__link--toys {
   background-color: $primary-color-500;
   position: relative;
 
   &::after {
     background-image: url("../img/toy.svg");
-    width: 60px;
-    height: 60px;
   }
 }
 
-.main-header-menu__link {
-  padding: 24px 160px 31px 30px;
-  font-size: 20px;
-  line-height: 30px;
-  color: $color-white-00;
-  font-weight: 700;
+.main-header-menu__text {
+  padding: 24px 130px 31px 30px;
+  display: block;
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
+    max-width: none;
     padding: 25px 167px 34px 36px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 350px 34px 37px;
   }
 }

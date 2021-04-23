@@ -1,0 +1,7 @@
+.product-image {
+  min-height: 100%;
+
+  @media (min-width: $mobile-width-only) {
+    min-width: 100%;
+  }
+}

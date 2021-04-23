@@ -10,102 +10,116 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo logo">
+    <button class="page-header__toggle-navigate toggle-navigate" type="button">
+      <span class="visually-hidden">
+        Открыть меню
+      </span>
+    </button>
+    <nav class="page-header__main-nav main-nav">
+      <a class="main-nav__logo logo">
         <img class="logo__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
       </a>
-      <button class="page-header__toggle-navigate toggle-navigate" type="button">
-        <span class="visually-hidden">
-          Открыть меню
-        </span>
-      </button>
-      <nav class="page-header__main-nav main-nav ">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">
-              Вязание на заказ
-            </a>
-          </li>
-        </ul>
-        <div class="main-nav__user-nav user-nav">
-          <a class="user-nav__search">
-            Поиск по сайту
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="catalog.html">
+            Каталог товаров
           </a>
-          <a class="user-nav__cart" href="blank.html">
-            Корзина:
-            <span>пока пуста</span>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">
+            Вязание на заказ
           </a>
-        </div>
-      </nav>
+        </li>
+      </ul>
+      <div class="main-nav__user-nav user-nav">
+        <a class="user-nav__search">
+          Поиск по сайту
+        </a>
+        <a class="user-nav__cart" href="blank.html">
+          Корзина:
+          <span>пока пуста</span>
+        </a>
+      </div>
+    </nav>
+    <div class="page-header__info header-info">
+      <ul class="header-info__list">
+        <li class="header-info__item">Новые поступления</li>
+        <li class="header-info__item">Распродажа</li>
+      </ul>
+      <p class="header-info__comment">Бесплатная доставка по России</p>
+    </div>
     </div>
   </header>
   <main class="page-main">
     <section class="main-header">
       <div class="main-header__layout">
-        <img class="main-header__layout-img" src="img/house.jpg" width="568" height="489"
-          alt="кукольный домик для игрушек">
-        <div class="main-header__wrapper">
-          <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
-        </div>
+        <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
       </div>
       <section class="main-header-menu">
         <h2 class="visually-hidden">Меню - интерьер/игрушки</h2>
         <div class="main-header-menu__list">
-          <div class="main-header-menu__item main-header-menu__item--interior">
-            <a href="#" class="main-header-menu__link">
-            Предметы интерьера
+          <a href="#" class="main-header-menu__link main-header-menu__link--interior">
+            <span class="main-header-menu__text">
+              Предметы интерьера
+            </span>
           </a>
-          </div>
-          <div class="main-header-menu__item main-header-menu__item--toys">
-            <a href="#" class="main-header-menu__link">
+          <a href="#" class="main-header-menu__link main-header-menu__link--toys">
+            <span class="main-header-menu__text">
               Детские игрушки
-            </a>
-          </div>
+            </span>
+          </a>
+
         </div>
       </section>
     </section>
     <section class="product-special">
       <div class="product-special__wrapper">
-        <h2 class="product-special__title">Вязаные корзинки</h2>
-        <h3 class="product-special__subtitle">товар недели</h3>
-        <p class="product-special__description">Экологически чистая пряжа,
-          ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <dl class="product-special__description-list">
-          <div class="product-special__item">
-            <dt class="product-special__description-term">
-              Цвет:
-            </dt>
-            <dd class="product-special__description-details">
-              «Тиффани»/серый
-            </dd>
-          </div>
-          <div class="product-special__item">
-            <dt class="product-special__description-term">
-              Диаметр:
-            </dt>
-            <dd class="product-special__description-details">
-              25 см
-            </dd>
-          </div>
-          <div class="product-special__item">
-            <dt class="product-special__description-term">
-              Высота:
-            </dt>
-            <dd class="product-special__description-details">
-              15 см
-            </dd>
-          </div>
-        </dl>
-        <div class="product-special__product-image">
-          <img src="img/product-triple-set-mobile-1.jpg" width="260" height="315" alt="набор из трех корзин">
+        <!--контейнер для заголовков-->
+        <div class="product-special__container-title">
+          <h2 class="product-special__title">Вязаные корзинки</h2>
+          <h3 class="product-special__subtitle">товар недели</h3>
         </div>
-        <p class="product-special__price">Цена: 990 руб.</p>
-        <a class="product-special__button button" href="#">Заказать</a>
+        <!--контейнер для текстовой части карточки-->
+        <div class="product-special__text">
+          <p class="product-special__description">Экологически чистая пряжа,
+            ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <dl class="product-special__description-list">
+            <div class="product-special__item">
+              <dt class="product-special__description-term">
+                Цвет:
+              </dt>
+              <dd class="product-special__description-details">
+                «Тиффани»/серый
+              </dd>
+            </div>
+            <div class="product-special__item">
+              <dt class="product-special__description-term">
+                Диаметр:
+              </dt>
+              <dd class="product-special__description-details">
+                25 см
+              </dd>
+            </div>
+            <div class="product-special__item">
+              <dt class="product-special__description-term">
+                Высота:
+              </dt>
+              <dd class="product-special__description-details">
+                15 см
+              </dd>
+            </div>
+          </dl>
+        </div>
+        <!--контейнер для картинок-->
+        <div class="product-special__product-image product-image">
+          <img class="product-image" src="img/product-triple-set-mobile-1.jpg" width="260" height="315"
+            alt="набор из трех корзин">
+        </div>
+        <!--покупка - цена и кнопка-->
+        <div class="product-special__price-container">
+          <p class="product-special__price">Цена: 990 руб.</p>
+          <a class="product-special__button button" href="#">Заказать</a>
+        </div>
       </div>
     </section>
     <section class="about">
@@ -116,26 +130,25 @@
             <p class="about__description about__description--flower">Экологически чистые материалы</p>
           </li>
           <li class="about__item">
-            <p class="about__description about__description--banknote">Скандинавский стиль по российской цене</p>
-          </li>
-          <li class="about__item">
-            <p class="about__description about__description--heart">Увеличивает лайки на фотографиях</p>
-          </li>
-          <li class="about__item">
             <p class="about__description about__description--clew">Связано вручную с любовью и умилением</p>
+          </li>
+          <li class="about__item">
+            <p class="about__description about__description--banknote">Скандинавский стиль по российской цене</p>
           </li>
           <li class="about__item">
             <p class="about__description about__description--rocket">Поддержка отечественного производителя</p>
           </li>
           <li class="about__item">
+            <p class="about__description about__description--heart">Увеличивает лайки на фотографиях</p>
+          </li>
+          <li class="about__item">
             <p class="about__description about__description--present">Поставляется в подарочной упаковке</p>
-
           </li>
         </ul>
       </div>
     </section>
     <section class="reviews">
-      <div class="rewiews__wrapper slider">
+      <div class="reviews__wrapper slider">
         <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__list slider-list">
           <li class="reviews__item slider-item">
@@ -189,16 +202,16 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/htmlacademy"><img
-                src="img/insta-logo.svg" width="22" height="21"></a>
+            <a class="social__link" href="https://www.instagram.com/htmlacademy"><img src="img/insta-logo.svg"
+                width="22" height="21"></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.facebook.com/htmlacademy"><img
-                src="img/fb-logo.svg" width="15" height="29"></a>
+            <a class="social__link" href="https://www.facebook.com/htmlacademy"><img src="img/fb-logo.svg" width="15"
+                height="29"></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.twitter.com/htmlacademy"><img
-                src="img/twitter-logo.svg" width="24" height="20"></a>
+            <a class="social__link" href="https://www.twitter.com/htmlacademy"><img src="img/twitter-logo.svg"
+                width="24" height="20"></a>
           </li>
         </ul>
       </div>

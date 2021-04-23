@@ -1,25 +1,42 @@
 .page-header {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
-}
-
-.page-header__wrapper {
-  @include side-margin;
-}
-
-.page-header__logo {
-  height: 79px;
+  background-color: $color-white-00;
 
   @media (min-width: $tablet-width) {
-    order: 2;
-    height: 89px;
+    background-image: linear-gradient(to bottom, $color-white-00 89px, #e0e0e0e0 89px, #f9f9f9 90px, #f9f9f9 90px);
   }
 }
 
 .page-header__toggle-navigate {
-  display: block;
+  justify-items: end;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__main-nav {
-  display: block;
+  @media (min-width: $tablet-width) {
+    display: contents;
+  }
+}
+
+.page-header__info {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    left: calc(50% - 12px);
+    width: 348px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    position: static;
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

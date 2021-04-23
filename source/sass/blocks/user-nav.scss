@@ -4,9 +4,38 @@
   line-height: 24px;
   text-decoration: none;
   border-top: 1px solid $color-lightgrey-300;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .user-nav__cart {
   display: block;
   color: $color-black-600;
+  text-align: center;
+  margin-top: 29px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid $color-lightgrey-300;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.user-nav__search {
+  display: block;
+  text-align: center;
+  padding-top: 29px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid $color-lightgrey-300;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 45px;
+  }
 }
