@@ -3,8 +3,11 @@
 }
 
 .contacts__wrapper {
-  @include side-margin;
-  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 320px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -92,6 +95,7 @@
 
 .contacts__button {
   margin: 41px 30px 39px;
+  max-width: 260px;
 
   @media (min-width: $tablet-width) {
     margin: 56px auto;

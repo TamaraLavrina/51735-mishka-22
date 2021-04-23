@@ -9,21 +9,24 @@
     margin-left: auto;
     margin-right: auto;
     background-image: none;
-    //я не додумалась .. видимо фото-фон дрлжен переместиться во враппер
   }
 }
 
 .reviews__wrapper {
-  @include side-margin;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 83px;
+  max-width: 320px;
 
   @media (min-width: $tablet-width) {
     max-width: 668px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content 1fr;
+    grid-template-columns: 1fr 175px;
+    grid-template-rows: 52px 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,11 +40,12 @@
 
 .reviews__title {
   @include title;
+  margin-bottom: 0;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    display: grid;
     grid-column: 1/2;
     grid-row: 1/2;
   }
@@ -57,7 +61,6 @@
   padding-left: 0;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-column: 1/3;
     grid-row: 2/4;
   }
