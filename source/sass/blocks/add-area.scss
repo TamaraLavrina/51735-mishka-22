@@ -2,4 +2,16 @@
   border: 2px solid $color-black-900;
   padding: 17px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px;
+    max-width: 501px;
+    max-height: 142px;
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+  }
 }

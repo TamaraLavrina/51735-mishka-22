@@ -1,8 +1,15 @@
-.element__input {
+.element {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.element__chooser {
   background-color: inherit;
 }
 
-.element__input--radio + label::before {
+.element__chooser--radio + label::before {
   content: "";
   position: absolute;
   left: -60px;
@@ -50,7 +57,7 @@
   border: 2px solid $primary-color-300;
 }
 
-.element__input--wide-text {
+.element__chooser--wide-text {
   border: none;
   border-bottom: 2px solid $color-black-900;
   padding: 17px 0;
@@ -65,4 +72,27 @@
   margin-bottom: 24px;
   position: relative;
   user-select: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-left: 26px;
+    padding: 17px;
+  }
+}
+
+.element__input {
+  border: none;
+  border-bottom: 2px solid #000000;
+  background-color: inherit;
+  width: 100%;
+  padding: 16px 130px 18px 18px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 700px;
+  }
+}
+
+.element__input--wide-text {
+  padding: 16px 130px 17px 16px;
+  grid-column: 2/5;
 }
