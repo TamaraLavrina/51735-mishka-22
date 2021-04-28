@@ -9,11 +9,10 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    display: grid;
     padding-right: 50px;
     padding-left: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 700px;
+    max-width: 668px;
     margin-top: 54px;
     font-size: 17px;
     line-height: 30px;
@@ -23,9 +22,7 @@
   @media (min-width: $desktop-width) {
     padding-right: 0;
     padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 99px;
-    grid-column: 2/6;
+    grid-column: 2/5;
   }
 }

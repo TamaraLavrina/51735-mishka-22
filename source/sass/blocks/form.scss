@@ -14,7 +14,7 @@
 .form__button {
   margin-top: 36px;
   margin-bottom: 55px;
-  max-width: 260px;
+  max-width: 100%;
 
   @media (min-width: $tablet-width) {
     max-width: 230px;
@@ -32,22 +32,16 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-right: auto;
-    margin-left: auto;
     max-width: 668px;
     margin-top: 63px;
     font-size: 19px;
     line-height: 18px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
+    grid-column: 1/5;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
     padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
     max-width: 1050px;
     margin-top: 99px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

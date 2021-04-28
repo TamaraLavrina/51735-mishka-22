@@ -62,22 +62,22 @@
       <!--  форма-->
       <form class="form-area__form form" action="https://echo.htmlacademy.ru/courses" method="POST">
         <!--  филдсет-->
-        <fieldset class="form__type form__type--type fields">
+        <fieldset class="form__type form__type--type fields checkbox">
           <legend class="fields__legend-name">Тип</legend>
           <!-- список полей-->
-          <ul class="fields__list fields__list--radio">
+          <ul class="checkbox__list">
             <!-- элемент cписка полей-->
-            <li class="fields__item element">
+            <li class="checkbox__item">
               <!-- инпут поля радио-->
-              <input class="visually-hidden element__chooser element__chooser--radio" type="radio" name="product-type"
+              <input class="visually-hidden checkbox__chooser checkbox__chooser--radio" type="radio" name="product-type"
                 value="interior-accessory" id="i-accessory" checked>
               <!-- подпись элемента списка полей-->
-              <label for="i-accessory" class="element__label">Аксессуар для интерьера</label>
+              <label for="i-accessory" class="checkbox__label">Аксессуар для интерьера</label>
             </li>
-            <li class="fields__item element">
-              <input class="visually-hidden element__chooser element__chooser--radio" type="radio" name="product-type"
+            <li class="checkbox__item ">
+              <input class="visually-hidden checkbox__chooser checkbox__chooser--radio" type="radio" name="product-type"
                 value="toy" id="toy-filter">
-              <label for="toy-filter" class="element__label">Детская игрушка</label>
+              <label for="toy-filter" class="checkbox__label">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
@@ -85,39 +85,39 @@
 
         <div class="form__wrapper">
           <!--  филдсет-->
-          <fieldset class="form__type form__type--color fields">
+          <fieldset class="form__type form__type--color fields checkbox">
             <legend class="fields__legend-name">Цвет</legend>
             <!-- список чек-бокс-->
-            <ul class="fields__list fields__list--columns">
-              <li class="fields__item element">
-                <input class="visually-hidden element__chooser element__chooser--checkbox" type="checkbox" name="color"
+            <ul class="checkbox__list checkbox__list--columns">
+              <li class="checkbox__item">
+                <input class="visually-hidden checkbox__chooser checkbox__chooser--checkbox" type="checkbox" name="color"
                   value="white" id="checkbox-white" checked>
-                <label for="checkbox-white" class="element__label">Белый</label>
+                <label for="checkbox-white" class="checkbox__label">Белый</label>
               </li>
-              <li class="fields__item element">
-                <input class="visually-hidden element__chooser element__chooser--checkbox" type="checkbox" name="color"
+              <li class="checkbox__item">
+                <input class="visually-hidden checkbox__chooser checkbox__chooser--checkbox" type="checkbox" name="color"
                   value="grey" id="checkbox-grey" checked>
-                <label for="checkbox-grey" class="element__label">Серый</label>
+                <label for="checkbox-grey" class="checkbox__label">Серый</label>
               </li>
-              <li class="fields__item element">
-                <input class="visually-hidden element__chooser element__chooser--checkbox" type="checkbox" name="color"
+              <li class="checkbox__item">
+                <input class="visually-hidden checkbox__chooser checkbox__chooser--checkbox" type="checkbox" name="color"
                   value="tiffany" id="checkbox-tiffany">
-                <label for="checkbox-tiffany" class="element__label">«Тиффани»</label>
+                <label for="checkbox-tiffany" class="checkbox__label">«Тиффани»</label>
               </li>
-              <li class="fields__item element">
-                <input class="visually-hidden element__chooser element__chooser--checkbox" type="checkbox" name="color"
+              <li class="checkbox__item">
+                <input class="visually-hidden checkbox__chooser checkbox__chooser--checkbox" type="checkbox" name="color"
                   value="black" id="checkbox-black">
-                <label for="checkbox-black" class="element__label">Черный</label>
+                <label for="checkbox-black" class="checkbox__label">Черный</label>
               </li>
-              <li class="fields__item element">
-                <input class="visually-hidden element__chooser element__chooser--checkbox" type="checkbox" name="color"
+              <li class="checkbox__item">
+                <input class="visually-hidden checkbox__chooser checkbox__chooser--checkbox" type="checkbox" name="color"
                   value="pink" id="checkbox-pink">
-                <label for="checkbox-pink" class="element__label">Розовый</label>
+                <label for="checkbox-pink" class="checkbox__label">Розовый</label>
               </li>
-              <li class="fields__item element">
-                <input class="visually-hidden element__chooser element__chooser--checkbox" type="checkbox" name="color"
+              <li class="checkbox__item">
+                <input class="visually-hidden checkbox__chooser checkbox__chooser--checkbox" type="checkbox" name="color"
                   value="orange" id="checkbox-orange">
-                <label for="checkbox-orange" class="element__label">Оранжевый</label>
+                <label for="checkbox-orange" class="checkbox__label">Оранжевый</label>
               </li>
             </ul>
           </fieldset>
