@@ -1,16 +1,17 @@
 .fields {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
 .fields__list {
   list-style: none;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/5;
@@ -22,17 +23,7 @@
   }
 }
 
-.fields__list--no-padding {
-  list-style: none;
-  padding-left: 0;
-}
-
-.fields__list--columns,
-.fields__list--radio {
-  padding-left: 60px;
-}
-
-.fields__legend-name {
+.form__legend-name {
   text-transform: uppercase;
   font-size: 17px;
   line-height: 16px;
@@ -52,30 +43,3 @@
   }
 }
 
-.fields__legend-name--short::after {
-  width: 182px;
-  left: 78px;
-}
-
-@media (min-width: $tablet-width) {
-  .fields__legend-name {
-    grid-column: 1/2;
-    margin: 0;
-  }
-
-  .fields__legend-name::after,
-  .fields__legend-name--short::after {
-    display: none;
-  }
-
-  .fields__list--columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .fields__list--columns {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}

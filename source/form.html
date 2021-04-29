@@ -52,82 +52,85 @@
   </header>
   <main class="page-main">
     <section class="page-main__header">
-        <h1 class="page-main__title">Вязание на заказ</h1>
+      <h1 class="page-main__title">Вязание на заказ</h1>
     </section>
     <section class="form-area">
       <p class="form-area__intro">
         Мы будем рады воплотить в жизнь ваши пожелания!
         Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
+
       <!--  форма-->
+
       <form class="form-area__form form" action="https://echo.htmlacademy.ru/courses" method="POST">
-        <!--  филдсет-->
-        <fieldset class="form__type form__type--type fields checkbox">
-          <legend class="fields__legend-name">Тип</legend>
-          <!-- список полей-->
-          <ul class="checkbox__list">
-            <!-- элемент cписка полей-->
-            <li class="checkbox__item">
+
+        <!-- группа чекбоксов/радиокнопок(chooser)-->
+        <fieldset class="form__group  chooser">
+          <legend class="form__legend-name">Тип</legend>
+          <!-- список радиокнопок-->
+          <ul class="chooser__list">
+            <!-- элемент cписка -->
+            <li class="chooser__item element">
               <!-- инпут поля радио-->
-              <input class="visually-hidden checkbox__chooser checkbox__chooser--radio" type="radio" name="product-type"
+              <input class="visually-hidden chooser__input chooser__input--radio" type="radio" name="product-type"
                 value="interior-accessory" id="i-accessory" checked>
-              <!-- подпись элемента списка полей-->
-              <label for="i-accessory" class="checkbox__label">Аксессуар для интерьера</label>
+              <!-- подпись элемента списка-->
+              <label for="i-accessory" class="chooser__label">Аксессуар для интерьера</label>
             </li>
-            <li class="checkbox__item ">
-              <input class="visually-hidden checkbox__chooser checkbox__chooser--radio" type="radio" name="product-type"
+            <li class="chooser__item element">
+              <input class="visually-hidden chooser__input chooser__input--radio" type="radio" name="product-type"
                 value="toy" id="toy-filter">
-              <label for="toy-filter" class="checkbox__label">Детская игрушка</label>
+              <label for="toy-filter" class="chooser__label">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
 
-
         <div class="form__wrapper">
-          <!--  филдсет-->
-          <fieldset class="form__type form__type--color fields checkbox">
-            <legend class="fields__legend-name">Цвет</legend>
+          <!--цветная обертка/серый-->
+          <!-- группа чекбоксов/радиокнопок(chooser)-->
+          <fieldset class="form__group chooser chooser--checkbox">
+            <legend class="form__legend-name">Цвет</legend>
             <!-- список чек-бокс-->
-            <ul class="checkbox__list checkbox__list--columns">
-              <li class="checkbox__item">
-                <input class="visually-hidden checkbox__chooser checkbox__chooser--checkbox" type="checkbox" name="color"
+            <ul class="chooser__list chooser__list--columns">
+              <li class="chooser__item">
+                <input class="visually-hidden  chooser__input chooser__input__checkbox" type="checkbox" name="color"
                   value="white" id="checkbox-white" checked>
-                <label for="checkbox-white" class="checkbox__label">Белый</label>
+                <label for="checkbox-white" class="chooser__label">Белый</label>
               </li>
-              <li class="checkbox__item">
-                <input class="visually-hidden checkbox__chooser checkbox__chooser--checkbox" type="checkbox" name="color"
+              <li class="chooser__item">
+                <input class="visually-hidden chooser__input chooser__input__checkbox" type="checkbox" name="color"
                   value="grey" id="checkbox-grey" checked>
-                <label for="checkbox-grey" class="checkbox__label">Серый</label>
+                <label for="checkbox-grey" class="chooser__label">Серый</label>
               </li>
-              <li class="checkbox__item">
-                <input class="visually-hidden checkbox__chooser checkbox__chooser--checkbox" type="checkbox" name="color"
+              <li class="chooser__item">
+                <input class="visually-hidden chooser__input chooser__input__checkbox" type="checkbox" name="color"
                   value="tiffany" id="checkbox-tiffany">
-                <label for="checkbox-tiffany" class="checkbox__label">«Тиффани»</label>
+                <label for="checkbox-tiffany" class="chooser__label">«Тиффани»</label>
               </li>
-              <li class="checkbox__item">
-                <input class="visually-hidden checkbox__chooser checkbox__chooser--checkbox" type="checkbox" name="color"
+              <li class="chooser__item">
+                <input class="visually-hidden chooser__input chooser__input__checkbox" type="checkbox" name="color"
                   value="black" id="checkbox-black">
-                <label for="checkbox-black" class="checkbox__label">Черный</label>
+                <label for="checkbox-black" class="chooser__label">Черный</label>
               </li>
-              <li class="checkbox__item">
-                <input class="visually-hidden checkbox__chooser checkbox__chooser--checkbox" type="checkbox" name="color"
+              <li class="chooser__item">
+                <input class="visually-hidden chooser__input chooser__input__checkbox" type="checkbox" name="color"
                   value="pink" id="checkbox-pink">
-                <label for="checkbox-pink" class="checkbox__label">Розовый</label>
+                <label for="checkbox-pink" class="chooser__label">Розовый</label>
               </li>
-              <li class="checkbox__item">
-                <input class="visually-hidden checkbox__chooser checkbox__chooser--checkbox" type="checkbox" name="color"
+              <li class="chooser__item">
+                <input class="visually-hidden chooser__input chooser__input__checkbox" type="checkbox" name="color"
                   value="orange" id="checkbox-orange">
-                <label for="checkbox-orange" class="checkbox__label">Оранжевый</label>
+                <label for="checkbox-orange" class="chooser__label">Оранжевый</label>
               </li>
             </ul>
+
           </fieldset>
         </div>
-
-        <!--  филдсет-->
-        <fieldset class="form__type form__type--user-name fields">
-          <legend class="fields__legend-name">ФИО</legend>
-          <ul class="fields__list fields__list--no-padding">
-            <li class="fields__item element">
+        <!-- группа полей, текст(fields)-->
+        <fieldset class="form__group fields">
+          <legend class="form__legend-name">ФИО</legend>
+          <ul class="fields__list">
+            <li class="field__item element">
               <label for="input__name" class="element__label">Имя:</label>
               <input class="element__input element__input--wide-text" id="input__name" type="text" name="user-name"
                 placeholder="Введите ваше имя*" required>
@@ -137,53 +140,57 @@
               <input class="element__input element__input--wide-text" type="text" name="user-surname"
                 placeholder="Укажите фамилию*" required>
             </li>
-            <li class="fields__item element">
+            <li class="field__item element">
               <label for="patronimic" class="element__label">Отчество:</label>
               <input class="element__input element__input--wide-text" id="patronimic" type="text" name="user-patronymic"
                 placeholder="Отчество, если желаете">
             </li>
           </ul>
         </fieldset>
-
-        <!-- серая заливка на 2 блока-->
         <div class="form__wrapper">
-          <div class="form__type form__type--user-phone fields">
-            <legend class="fields__legend-name">Тел</legend>
+          <!--цветная обертка/серый-->
+          <!-- группа полей, текст-->
+          <div class="form__group fields">
+            <span class="form__legend-name">Тел</span>
             <div class="grid-wrapper fields__list">
-            <div class="fields__item element">
-              <label for="pnone-input" class="visually-hidden">Телефон</label>
-              <input class="element__input element__input--wide-text" id="pnone-input" type="tel" name="tel"
-                placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              <div class="fields__item element">
+                <label for="pnone-input" class="visually-hidden">Телефон</label>
+                <input class="element__input element__input--wide-text" id="pnone-input" type="tel" name="tel"
+                  placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              </div>
+            </div>
+
+          </div>
+          <!-- группа полей, текст-->
+          <div class="form__group fields">
+            <span class="form__legend-name">E-mail</span>
+            <div class="grid-wrapper fields__list">
+              <div class="fields__item element">
+                <label for="e-mail-input" class="visually-hidden"> email</label>
+                <input class="element__input element__input--wide-text" type="email" id="e-mail-input" name="email"
+                  placeholder="Ваш Email*" required>
+              </div>
             </div>
           </div>
-          </div>
-
-          <!-- как бы филдсет-->
-          <div class="form__type form__type--user-email  fields">
-            <span class="fields__legend-name fields__legend-name--short">E-mail</span>
-            <!--legend заменила на span-->
-            <div class="grid-wrapper fields__list">
-            <div class="fields__item element">
-              <label for="e-mail-input" class="visually-hidden"> email</label>
-              <input class="element__input element__input--wide-text" type="email" id="e-mail-input" name="email"
-                placeholder="Ваш Email*" required>
-            </div>
-          </div>
-          </div>
-        </div>
         </div>
 
-
-        <!-- как бы филдсет-->
-        <div class="form__type form__type--user-addinfo fields">
-          <span class="fields__legend-name">Доп</span>
+        <!-- группа полей, текст-->
+        <div class="form__group fields">
+          <span class="form__legend-name">Доп</span>
           <div class="grid-wrapper fields__list">
-            <label for="add-data" class="visually-hidden"> Дополнительная информация</label>
-            <textarea id="add-data" class="add-area__input" rows="6" name="info"
-              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="fields__item element">
+              <label for="add-data" class="visually-hidden"> Дополнительная информация</label>
+              <textarea id="add-data" class="element__input--add-area" rows="6" name="info"
+                placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
           </div>
+
         </div>
-        <div class="form__type form__type--footnotes">
+
+
+
+
+        <div class="form__group form__group--footnotes">
           <p class="form__footnotes">
             *Поля обязательны для заполнения
           </p>

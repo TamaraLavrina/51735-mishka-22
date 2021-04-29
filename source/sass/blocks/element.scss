@@ -17,6 +17,18 @@
   padding: 16px 17px;
 }
 
+.element__input--add-area {
+  border: 2px solid $color-black-900;
+  padding: 17px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px;
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
 .element__label {
   display: block;
   line-height: 18px;
@@ -28,7 +40,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-left: 26px;
-    padding: 17px;
+    margin-left: 0;
+    padding-left: 0;
   }
 }
