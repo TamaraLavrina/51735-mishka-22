@@ -1,9 +1,110 @@
+.manufacture-process {
+  padding-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 260px;
+  border-bottom: 1px solid $color-lightgrey-250;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    max-width: 668px;
+    margin-bottom: 64px;
+    padding-top: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    margin-bottom: 105px;
+    border: 1px solid $color-lightgrey-250;
+    padding: 0;
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: 682px 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    grid-gap: 80px;
+  }
+}
+
+.manufacture-process__title {
+  padding: 22px 13px 27px 91px;
+
+  @media (min-width: $tablet-width) {
+    width: 586px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 41px 5px 25px 107px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 96px 5px 28px 0;
+  }
+}
+
+.manufacture-process__video {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+}
+
+.manufacture-process__video-background {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    width: auto;
+  }
+}
+
 .manufacture-process__button {
-  margin: 33px 10px;
+  margin: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 586px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 230px;
+    margin: 0;
+    margin-bottom: 60px;
+  }
 }
 
 .manufacture-process__descript {
   font-size: 13px;
   line-height: 24px;
-  margin: 35px 28px 41px 34px;
+  margin: 34px 28px 41px 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+    max-width: 586px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 0;
+    width: 230px;
+    margin: 0;
+  }
 }

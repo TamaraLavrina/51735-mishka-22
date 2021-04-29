@@ -3,44 +3,51 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo logo">
+    <button class="page-header__toggle-navigate toggle-navigate" type="button">
+      <span class="visually-hidden">
+        Открыть меню
+      </span>
+    </button>
+    <nav class="page-header__main-nav main-nav">
+      <a href="index.html" class="main-nav__logo logo">
         <img class="logo__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
       </a>
-      <button class="page-header__toggle-navigate toggle-navigate" type="button">
-        <span class="visually-hidden">
-          Открыть меню
-        </span>
-      </button>
-      <nav class="page-header__main-nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#">
-              Каталог товаров
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">
-              Вязание на заказ
-            </a>
-          </li>
-        </ul>
-        <div class="main-nav__user-nav user-nav">
-          <a class="user-nav__search">
-            Поиск по сайту
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#">
+            Каталог товаров
           </a>
-          <a class="user-nav__cart" href="blank.html">
-            Корзина:
-            <span>пока пуста</span>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">
+            Вязание на заказ
           </a>
-        </div>
-      </nav>
+        </li>
+      </ul>
+      <div class="main-nav__user-nav user-nav">
+        <a class="user-nav__search">
+          Поиск по сайту
+        </a>
+        <a class="user-nav__cart" href="blank.html">
+          Корзина:
+          <span>пока пуста</span>
+        </a>
+      </div>
+    </nav>
+    <div class="page-header__info header-info">
+      <ul class="header-info__list">
+        <li class="header-info__item">Новые поступления</li>
+        <li class="header-info__item">Распродажа</li>
+      </ul>
+      <p class="header-info__comment">Бесплатная доставка по России</p>
+    </div>
     </div>
   </header>
   <main class="page-main">
@@ -54,47 +61,55 @@
       <div class="product-catalog__wrapper">
         <ul class="product-catalog__product-list">
           <li class="product-catalog__product-item product-item">
-            <h3 class="product-item__title title">Зайчик-попрыгайчик</h3>
-            <img class="product-item__img" src="img/product-1-catalog.jpg" width="260" height="195">
-            <p class="product-item__description">Рост 30 см, вес 200 г</p>
-            <div class="product-item__buy buy">
-              <p class="buy__price"> 1 200 руб.</p>
-              <a class="buy__add-cart" aria-label="Добавить в корзину" href="#">
-                <img src="img/cart.svg" width="20" height="19">
-              </a>
+            <img class="product-item__img" src="img/product-1-catalog.jpg" width="260" height="195" aria-labelledby="img_1">
+            <div class="product-item__description">
+              <h3 class="product-item__title title" id="img_1">Зайчик-попрыгайчик</h3>
+              <p class="product-item__property">Рост 30 см, вес 200 г</p>
+              <div class="product-item__buy buy">
+                <p class="buy__price"> 1 200 руб.</p>
+                <a class="buy__add-cart" aria-label="Добавить в корзину" href="#">
+                  <img src="img/cart.svg" width="20" height="19">
+                </a>
+              </div>
             </div>
           </li>
           <li class="product-catalog__product-item product-item">
-            <h3 class="product-item__title title">Корзинка для белья</h3>
-            <img class="product-item__img" src="img/product-2-catalog-cart.jpg" width="260" height="195">
-            <p class="product-item__description">Диаметр 15 см, высота 10 см</p>
-            <div class="product-item__buy buy">
-              <p class="buy__price"> 690 руб.</p>
-              <a class="buy__add-cart" aria-label="Добавить в корзину" href="#">
-                <img src="img/cart.svg" width="20" height="19">
-              </a>
+            <img class="product-item__img" src="img/product-2-catalog-cart.jpg" width="260" height="195" aria-labelledby="img_2">
+            <div class="product-item__description">
+              <h3 class="product-item__title title" id="img_2">Корзинка для белья</h3>
+              <p class="product-item__property">Диаметр 15 см, высота 10 см</p>
+              <div class="product-item__buy buy">
+                <p class="buy__price"> 690 руб.</p>
+                <a class="buy__add-cart" aria-label="Добавить в корзину" href="#">
+                  <img src="img/cart.svg" width="20" height="19">
+                </a>
+              </div>
             </div>
           </li>
           <li class="product-item">
-            <h3 class="product-item__title title">Большая корзинка для игрушек</h3>
-            <img class="product-item__img" src="img/product-3-catalog-cart-toys.jpg" width="260" height="195">
-            <p class="product-item__description">Большая корзинка для игрушек</p>
-            <div class="product-item__buy buy">
-              <p class="buy__price"> 1 500 руб.</p>
-              <a class="buy__add-cart" aria-label="Добавить в корзину" href="#">
-                <img src="img/cart.svg" width="20" height="19">
-              </a>
+            <img class="product-item__img" src="img/product-3-catalog-cart-toys.jpg" width="260" height="195"
+              aria-labelledby="img_3">
+            <div class="product-item__description">
+              <h3 class="product-item__title title" id="img_3">Большая корзинка для игрушек</h3>
+              <p class="product-item__property">Большая корзинка для игрушек</p>
+              <div class="product-item__buy buy">
+                <p class="buy__price"> 1 500 руб.</p>
+                <a class="buy__add-cart" aria-label="Добавить в корзину" href="#">
+                  <img src="img/cart.svg" width="20" height="19">
+                </a>
+              </div>
             </div>
           </li>
         </ul>
         <section class="manufacture-process">
           <h2 class="manufacture-process__title title">Процесс производства</h2>
-          <div class="manufacture-process__video">
-            <img class="manufacture-process__video-background" src="img/video.jpg" alt="замещающая картинка видеоплеер" width="260" height="150">
+          <div class="manufacture-process__video video">
+            <img class="manufacture-process__video-background" src="img/video.jpg" alt="замещающая картинка видеоплеер"
+              width="260" height="150">
+              <button type="button" class="video__button">
+                <img src="img/button-play-video.png" alt="проиграть видео" width="101" height="77">
+              </button>
           </div>
-          <button type="button">
-            <img src="img/button-play-video.svg" alt="проиграть видео" width="101" height="77">
-          </button>
           <p class="manufacture-process__descript">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
