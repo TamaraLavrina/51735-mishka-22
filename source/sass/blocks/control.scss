@@ -1,8 +1,20 @@
-.element__input {
-  background-color: inherit;
+
+.control__label {
+  display: block;
+  line-height: 18px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  position: relative;
+  user-select: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
-.element__input--radio + label::before {
+
+.control__input--radio + label::before {
   content: "";
   position: absolute;
   left: -60px;
@@ -13,7 +25,7 @@
   border-radius: 50%;
 }
 
-.element__chooser--radio:checked + label::after {
+.control__input--radio:checked + label::after {
   content: "";
   position: absolute;
   top: 7px;
@@ -24,7 +36,7 @@
   border-radius: 50%;
 }
 
-.element__chooser--checkbox + label::before {
+.control__input--checkbox + label::before {
   content: "";
   position: absolute;
   left: -60px;
@@ -34,7 +46,7 @@
   border: 2px solid $color-black-900;
 }
 
-.element__chooser--checkbox:checked + label::after {
+.control__input--checkbox:checked + label::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -46,23 +58,6 @@
   background-position: 0 0;
 }
 
-.element__chooser + label:hover::before {
+.control__input + label:hover::before {
   border: 2px solid $primary-color-300;
-}
-
-.element__input--wide-text {
-  border: none;
-  border-bottom: 2px solid $color-black-900;
-  padding: 17px 0;
-  width: 100%;
-}
-
-.element__label {
-  display: block;
-  line-height: 18px;
-  font-size: 17px;
-  font-weight: 700;
-  margin-bottom: 24px;
-  position: relative;
-  user-select: none;
 }

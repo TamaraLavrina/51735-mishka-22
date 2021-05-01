@@ -1,0 +1,30 @@
+.chooser {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/5;
+  }
+}
+
+.chooser__list {
+  padding-left: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/7;
+  }
+}
+
+.chooser__list--columns {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.chooser__item {
+  padding-left: 60px;
+}

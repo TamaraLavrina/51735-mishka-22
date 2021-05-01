@@ -1,3 +1,8 @@
+.form {
+  font-size: 17px;
+  line-height: 18px;
+}
+
 .form__wrapper {
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -9,9 +14,82 @@
 .form__button {
   margin-top: 36px;
   margin-bottom: 55px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 230px;
+    order: -1;
+  }
 }
 
-.form__type {
-  @include side-margin;
-  margin-top: 29px;
+.form__group {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 0;
+    max-width: 668px;
+    font-size: 19px;
+    line-height: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.form__group--footnotes {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    max-width: 668px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $desktop-width) {
+      max-width: 700px;
+    }
+  }
+}
+
+.form__legend-name {
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $primary-color-200;
+  margin-bottom: 25px;
+  position: relative;
+
+  &::after {
+    height: 1px;
+    position: absolute;
+    left: 60px;
+    top: 7px;
+    background-color: $primary-color-300;
+    content: "";
+    width: 200px;
+  }
+}
+
+.form__legend-name--short::after {
+  width: 182px;
+  left: 78px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__legend-name {
+    grid-column: 1/2;
+    margin: 0;
+  }
+
+  .form__legend-name::after,
+  .form__legend-name--short::after {
+    display: none;
+  }
 }

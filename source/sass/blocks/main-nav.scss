@@ -43,7 +43,6 @@
 
 .main-nav__item {
   display: block;
-  text-align: center;
   padding-top: 29px;
   padding-bottom: 27px;
   border-top: 1px solid $color-lightgrey-300;
@@ -52,6 +51,14 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
+}
+
+.main-nav__item a {
+  max-width: 320px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
 }
 
 .main-nav__user-nav {

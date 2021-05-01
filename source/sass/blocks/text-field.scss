@@ -1,0 +1,49 @@
+.text-field__label {
+  display: block;
+  line-height: 18px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  position: relative;
+  user-select: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.text-field__input {
+  border: none;
+  border-bottom: 2px solid #000000;
+  background-color: inherit;
+  width: 100%;
+  padding: 16px 17px;
+}
+
+.text-field__input--add-area {
+  border: 2px solid $color-black-900;
+  padding: 17px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px;
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
+.element__label {
+  display: block;
+  line-height: 18px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  position: relative;
+  user-select: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}

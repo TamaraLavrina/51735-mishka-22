@@ -2,6 +2,12 @@
   background-color: $color-white-00;
 
   @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, $color-white-00 89px, #e0e0e0e0 89px, #f1f1f1 90px, #f1f1f1 90px);
+  }
+}
+
+.page-header--gradient {
+  @media (min-width: $tablet-width) {
     background-image: linear-gradient(to bottom, $color-white-00 89px, #e0e0e0e0 89px, #f9f9f9 90px, #f9f9f9 90px);
   }
 }
