@@ -131,6 +131,14 @@
   }
 }
 
+.reviews__toggle:hover {
+  opacity: 0.6;
+}
+
+.reviews__toggle:active {
+  opacity: 0.3;
+}
+
 .reviews__write-us {
   @media (min-width: $tablet-width) {
     max-width: 175px;
