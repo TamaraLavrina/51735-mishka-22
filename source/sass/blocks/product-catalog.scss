@@ -12,11 +12,11 @@
   padding-top: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 82px;
+    padding-top: 81px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 111px;
+    padding-top: 130px;
   }
 }
 
@@ -27,11 +27,22 @@
   margin-bottom: 0;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 51px;
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
+  }
+}
+
+.product-catalog__product-item {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
   }
 }

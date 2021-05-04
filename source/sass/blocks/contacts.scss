@@ -77,17 +77,16 @@
 
 .contacts__item a {
   text-decoration: underline;
-  text-decoration-color: #46c1ae;
-  text-decoration-style: solid 1px;
+  text-decoration-color: $primary-color-550;
   color: $color-black-900;
 }
 
 .contacts__item a:hover {
-  color: #46c1ae;
+  color: $primary-color-550;
 }
 
 .contacts__item a:active {
-  text-decoration-color: rgba(70, 193, 174, 0.1);
+  text-decoration-color: rgba($primary-color-550, 0.1);
 }
 
 

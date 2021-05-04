@@ -1,36 +1,26 @@
 .product-item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
+  display: grid;
+  width: 260px;
   margin-left: auto;
   margin-right: auto;
-  width: 260px;
+  border: 1px solid $color-lightgrey-300;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     width: 668px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    margin: 0;
     width: 316px;
-    //min-height: 659px;
-    flex-direction: column;
-    margin-right: 51px;
-    margin-left: 0;
-    margin-bottom: 0;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: 316px;
+    justify-content: space-between;
   }
 }
 
-.product-item:last-of-type {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 0;
-  }
+.product-item__blank {
+  background-color: transparent;
 }
 
 .product-item__title {
@@ -44,30 +34,33 @@
   font-size: 13px;
   line-height: 30px;
   margin: 0;
+  padding-top: 5px;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
+    padding-top: 7px;
   }
 }
 
 .product-item__description {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   padding: 27px;
-  border: 1px solid $color-lightgrey-300;
+  margin-top: -7px;
 
 
   @media (min-width: $tablet-width) {
-    padding: 26px 34px;
+    padding: 26px 32px 30px;
     display: grid;
-    grid-template-rows: min-content  1fr min-content;
+    grid-template-rows: min-content 1fr min-content;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 26px 34px;
+    padding: 20px 27px 25px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    justify-content: space-between;
   }
 }
 
@@ -77,6 +70,11 @@
   align-items: baseline;
   border-top: 1px solid #ececec;
   margin-top: 18px;
+  padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
@@ -85,7 +83,7 @@
 
 .product-item__img {
   @media (min-width: $tablet-width) {
-    width: 100%;
-    overflow: hidden;
+    height: 100%;
+    width: auto;
   }
 }

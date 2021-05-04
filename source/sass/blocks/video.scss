@@ -1,7 +1,13 @@
 .video__button {
   border: none;
-  background-color: inherit;
+  background-color: transparent;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  padding: 0;
+  top: 37px;
+  left: 80px;
+
+  @media (min-width: $tablet-width) {
+    top: 189px;
+    left: 283px;
+  }
 }
