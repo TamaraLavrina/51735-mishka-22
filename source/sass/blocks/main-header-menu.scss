@@ -2,6 +2,7 @@
   // по идеи он же упирается в края, значит ему не задавать максимальную ширину?  max-width: 320px;
 
   @media (min-width: $tablet-width) {
+
     max-width: 668px;
     margin: 0 auto;
     display: flex;
@@ -14,8 +15,8 @@
 
 .main-header-menu__link {
   display: block;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 19px;
+  line-height: 24px;
   color: $color-white-00;
   font-weight: 700;
 
@@ -25,7 +26,7 @@
     height: 62px;
     position: absolute;
     left: calc(50% + 73px);
-    top: 31px;
+    top: 23px;
     content: "";
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -34,10 +35,13 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     width: 300px;
+    font-size: 20px;
+    line-height: 30px;
 
     &::after {
-      right: 35px;
+      right: 28px;
       left: auto;
+      top: 30px;
     }
   }
 }
@@ -57,6 +61,7 @@
 
   &::after {
     background-image: url("../img/toy.svg");
+    right: 33px;
   }
 }
 

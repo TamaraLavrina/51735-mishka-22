@@ -12,8 +12,9 @@
 
 .header-info__comment {
   text-align: right;
-  height: 50px;
-  margin-top: -25px;
+  height: 20px;
+  margin-top: -45px;
+  padding-right: 2px;
 
   @media (min-width: $desktop-width) {
     margin-top: 0;

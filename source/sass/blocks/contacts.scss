@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 70px;
+  padding-top: 25px;
 }
 
 .contacts__wrapper {
@@ -50,6 +50,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
@@ -69,6 +70,7 @@
   line-height: 30px;
   display: flex;
   align-items: flex-start;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     max-width: 308px;
@@ -110,7 +112,7 @@
 }
 
 .contacts__button {
-  margin: 41px auto 39px;
+  margin: 36px auto 39px;
   max-width: 260px;
 
   @media (min-width: $tablet-width) {

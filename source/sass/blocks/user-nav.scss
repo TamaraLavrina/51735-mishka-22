@@ -59,13 +59,17 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    max-width: 100%;
+    padding-left: 82px;
+    padding-top: 32px;
+    padding-bottom: 0;
   }
 }
 
 .user-nav__search {
   max-width: 260px;
-  padding-top: 29px;
-  padding-bottom: 27px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   padding-left: 46px;
   display: block;
   margin-left: auto;
@@ -76,6 +80,9 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    border-left: 1px solid $color-lightgrey-300;
+    border-right: 1px solid $color-lightgrey-300;
+    padding-right: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,7 +91,7 @@
 }
 
 .user-nav__link-text {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -94,4 +101,9 @@
   position: absolute;
   top: 32px;
   left: calc(50% - 130px);
+
+  @media (min-width: $tablet-width) {
+    top: 36px;
+    left: 33px;
+  }
 }
