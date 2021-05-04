@@ -1,15 +1,18 @@
-.element {
+.text-field__label {
+  display: block;
+  line-height: 18px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  position: relative;
+  user-select: none;
+
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: center;
   }
 }
 
-.element__chooser {
-  background-color: inherit;
-}
-
-.element__input {
+.text-field__input {
   border: none;
   border-bottom: 2px solid #000000;
   background-color: inherit;
@@ -17,7 +20,7 @@
   padding: 16px 17px;
 }
 
-.element__input--add-area {
+.text-field__input--add-area {
   border: 2px solid $color-black-900;
   padding: 17px;
   width: 100%;
