@@ -1,5 +1,9 @@
 .contacts {
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 28px;
+  }
 }
 
 .contacts__wrapper {
@@ -14,8 +18,8 @@
     flex-wrap: wrap;
     max-width: 668px;
     justify-content: space-between;
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -47,6 +51,7 @@
 }
 
 .contacts__title {
+  display: block;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -55,7 +60,9 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    margin-right: 400px;
+    margin: 0;
+    padding: 35px 400px 50px 0;
+    //я пониамю что такой отступ справа неправильно но не знаю как иначе
   }
 
   @media (min-width: $desktop-width) {
@@ -75,12 +82,15 @@
   @media (min-width: $tablet-width) {
     max-width: 308px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .contacts__item a {
   text-decoration: underline;
   text-decoration-color: #46c1ae;
-  text-decoration-style: solid 1px;
   color: $color-black-900;
 }
 

@@ -1,10 +1,10 @@
 .reviews {
+  position: relative;
   padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     padding-top: 55px;
-    padding-bottom: 70px;
-    background-position: 0 50%;
+    padding-bottom: 125px;
     background-repeat: no-repeat;
     background-image: url("../img/review-napkin.jpg");
 
@@ -21,6 +21,16 @@
   }
 }
 
+.reviews::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/zigzag-line-desktop.svg");
+  background-repeat: repeat-x;
+  bottom: 8px;
+  height: 17px;
+  width: 100%;
+}
+
 .reviews__wrapper {
   margin-right: auto;
   margin-left: auto;
@@ -33,6 +43,7 @@
     max-width: 668px;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 25px;
     display: grid;
     grid-template-columns: 1fr 175px;
     grid-template-rows: 52px 1fr;
@@ -41,7 +52,6 @@
   @media (min-width: $desktop-width) {
     max-width: 1050px;
     padding-left: 174px;
-    background-position: 0 50%;
     background-repeat: no-repeat;
     background-image: url("../img/review-napkin.jpg");
 
@@ -93,12 +103,18 @@
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
+    margin-top: 21px;
+    margin-bottom: 36px;
   }
+}
+
+.reviews__author {
+  padding-top: 22px;
 }
 
 .reviews__author-name {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 30px;
   font-style: normal;
 }
@@ -107,6 +123,7 @@
   line-height: 24px;
   font-size: 17px;
   margin: 0;
+  padding-top: 4px;
 }
 
 .reviews__toggles {
@@ -114,7 +131,7 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     max-width: 175px;
