@@ -66,12 +66,27 @@
 
 .contacts__item {
   font-size: 14px;
+  line-height: 30px;
   display: flex;
   align-items: flex-start;
 
   @media (min-width: $tablet-width) {
     max-width: 308px;
   }
+}
+
+.contacts__item a {
+  text-decoration: underline;
+  text-decoration-color: $primary-color-550;
+  color: $color-black-900;
+}
+
+.contacts__item a:hover {
+  color: $primary-color-550;
+}
+
+.contacts__item a:active {
+  text-decoration-color: rgba($primary-color-550, 0.1);
 }
 
 

@@ -3,6 +3,11 @@
     background-position: 0 50%;
     background-repeat: no-repeat;
     background-image: url("../img/review-napkin.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review-napkin@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -35,6 +40,11 @@
     background-position: 0 50%;
     background-repeat: no-repeat;
     background-image: url("../img/review-napkin.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review-napkin@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 }
 
@@ -119,6 +129,14 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
+}
+
+.reviews__toggle:hover {
+  opacity: 0.6;
+}
+
+.reviews__toggle:active {
+  opacity: 0.3;
 }
 
 .reviews__write-us {
