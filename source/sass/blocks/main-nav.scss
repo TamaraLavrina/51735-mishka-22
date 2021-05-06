@@ -58,10 +58,9 @@
     display: none;
   }
 }
-//
+
 .main-nav--nojs .main-nav__toggle-navigate {
-  // display: none; след св-во чтобы не ругался на путое правило
-  background-color: inherit;
+  display: none;
 }
 
 
@@ -118,6 +117,7 @@
     display: flex;
     justify-content: space-between;
     order: 1;
+    flex-grow: 1;
   }
 }
 
@@ -125,11 +125,23 @@
   display: block;
   border-top: 1px solid $color-lightgrey-300;
   color: $color-black-900;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    border-right: 1px solid $color-lightgrey-300;
+    //width: 234px;
+  }
 }
+
+.main-nav__item:last-of-type {
+  padding-left: 0;
+}
+
 
 .main-nav__list a {
   max-width: 260px;
@@ -147,11 +159,18 @@
     margin-left: 0;
     padding-right: 17px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 24px;
+    padding: 32px 0;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .main-nav__list a:last-child {
-    margin-right: 0;
+    padding-left: 40px;
   }
 }
 

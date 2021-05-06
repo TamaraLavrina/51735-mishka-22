@@ -28,12 +28,28 @@
   }
 }
 
+.user-nav__icon {
+  opacity: 0.2;
+  position: absolute;
+  top: 32px;
+  left: calc(50% - 130px);
+
+  @media (min-width: $tablet-width) {
+    top: 36px;
+    left: 33px;
+  }
+}
+
 .user-nav__item a:hover {
   opacity: 0.6;
 }
-
+//* что здесь не так? *//
 .user-nav__item a:hover .user-nav__icon {
-  fill: #63d1bb;
+  opacity: 1;
+
+  path {
+    fill: #63d1bb;
+  }
 }
 
 .user-nav__item a:active {
@@ -43,7 +59,10 @@
 
 .user-nav__item a:active .user-nav__icon {
   opacity: 0.3;
-  fill: #63d1bb;
+
+  path {
+    fill: #63d1bb;
+  }
 }
 
 .user-nav__cart {
@@ -109,18 +128,7 @@
 
 .user-nav__link-text {
   @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.user-nav__icon {
-  opacity: 0.2;
-  position: absolute;
-  top: 32px;
-  left: calc(50% - 130px);
-
-  @media (min-width: $tablet-width) {
-    top: 36px;
-    left: 33px;
+    position: absolute;
+    opacity: 0;
   }
 }
