@@ -1,0 +1,46 @@
+.modal {
+  width: 320px;
+  border: 1px solid $color-lightgrey-400;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 29px 30px 46px;
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 566px;
+  }
+}
+
+.modal__title {
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 30px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.modal__button {
+  width: 100%;
+  padding: 18px;
+  font-size: 17px;
+  line-height: 16px;
+  background-color: $primary-color-200;
+  border: none;
+  color: $color-white-00;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    margin-left: 108px;
+    margin-right: 108px;
+  }
+}

@@ -17,7 +17,6 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 668px;
-    justify-content: space-between;
     padding-right: 0;
     padding-left: 0;
   }
@@ -81,6 +80,10 @@
 
   @media (min-width: $tablet-width) {
     max-width: 308px;
+    font-size: 17px;
+    padding-right: 30px;
+    margin-right: 25px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,7 +112,7 @@
   margin-right: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 3px;
+    margin-right: 25px;
   }
 }
 
@@ -126,7 +129,7 @@
   max-width: 260px;
 
   @media (min-width: $tablet-width) {
-    margin: 56px auto;
+    margin: 49px auto 57px;
     max-width: 230px;
   }
 }

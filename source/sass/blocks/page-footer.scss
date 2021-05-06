@@ -8,8 +8,9 @@
   padding: 26px 30px 15px;
 
   @media (min-width: $tablet-width) {
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 28px;
     max-width: 668px;
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +22,10 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    padding-left: 0;
   }
 }
 

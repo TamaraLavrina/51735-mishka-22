@@ -213,7 +213,7 @@
         <div class="contacts__item">
           <p class="contacts__head">адрес:</p>
           <address class="contacts__address">
-            г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д. 19/8, офис 101
+            г. Санкт-Петербург ул.&nbsp;Большая&nbsp;Конюшенная д. 19/8, офис 101
           </address>
         </div>
       </div>
@@ -256,6 +256,25 @@
       </div>
     </div>
   </footer>
+  <section class="modal">
+    <form action="#" method="POST">
+      <h1 class="modal__title">Добавить в корзину</h1>
+      <p> Выберите размер:</p>
+      <div class="size-chooser">
+        <input class="size-chooser__item" type="radio" name="size" id="size_1" value="S">
+        <label class="size-chooser__label" for="size_1">S</label>
+
+        <input class="size-chooser__item" type="radio" name="size" id="size_2" value="M">
+        <label class="size-chooser__label" for="size_2">M</label>
+
+        <input checked class="size-chooser__item" type="radio" name="size" id="size_3" value="L">
+        <label class="size-chooser__label" for="size_3">L</label>
+      </div>
+      <button class="modal__button button" type="submit">Добавить</button>
+    </form>
+
+  </section>
 </body>
+
 
 </html>

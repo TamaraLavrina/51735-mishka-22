@@ -13,4 +13,9 @@
   padding-top: 6px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
+
