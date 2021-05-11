@@ -3,7 +3,7 @@
   margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 74px;
+  padding-top: 30px;
   max-width: 320px;
 
   @media (min-width: $tablet-width) {
@@ -16,7 +16,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 700px;
-    padding-top: 84px;
+    padding-top: 70px;
   }
 }
 
@@ -45,7 +45,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 30px;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 27px;
+    row-gap: 27px;
   }
 }
 

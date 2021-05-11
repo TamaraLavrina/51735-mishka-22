@@ -1,39 +1,32 @@
 .size-chooser {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 31px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding-right: 120px;
-    padding-left: 120px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
-.size-chooser__item {
-  display: none;
-}
-
 .size-chooser__label {
-  position: relative;
   display: block;
-  cursor: pointer;
-  user-select: none;
-  padding: 18px 37px;
-}
-
-.size-chooser__item + label::before {
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: 5px;
-  width: 112px;
-  height: 52px;
-  margin: 0;
-  cursor: pointer;
+  width: 83px;
+  height: 53px;
+  padding: 19px 0;
+  color: $color-black-900;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
   border: 2px solid $color-lightgrey-300;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+  }
 }
 
-.size-chooser__item:checked + label::before {
+.size-chooser__item:checked + .size-chooser__label {
   border: 2px solid $primary-color-300;
 }

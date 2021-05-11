@@ -36,11 +36,13 @@
       bottom: 0;
       height: 24px;
       width: 100%;
+      background-position: -5px 11px;
     }
-    /* это же одна и та же линия - как правильно поменять ей высоту? */
+
     @media (min-width: $desktop-width) {
-      background-image: url("../img/zigzag-fill-desktop.svg");
-      height: 17px;
+      width: 200%;
+      background-position: 7px 8px;
+      background-size: 52%;
     }
   }
 }

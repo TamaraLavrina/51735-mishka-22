@@ -15,10 +15,16 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
     align-items: flex-end;
+    padding-right: 35px;
+    padding-left: 10px;
   }
 }
 
 .social__item {
-  margin-right: 35px;
-  margin-left: 5px;
+  margin: 0 20px;
+}
+
+.social__link {
+  width: 24px;
+  height: 29px;
 }
