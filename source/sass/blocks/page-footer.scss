@@ -15,6 +15,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,6 +37,11 @@
 
 .page-footer__social {
   border-bottom: 1px solid $color-lightgrey-300;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 59px;
+  padding-right: 59px;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -48,7 +54,6 @@
   align-items: center;
   margin: auto;
   padding: 15px 0 18px;
-
 
   @media (min-width: $tablet-width) {
     margin: 0;
