@@ -2,7 +2,7 @@
   padding-top: 10px;
   padding-bottom: 31px;
   display: flex;
-  justify-content: space-between;
+
 
   @media (min-width: $tablet-width) {
     padding-right: 0;
@@ -10,11 +10,13 @@
   }
 }
 
+
 .size-chooser__label {
   display: block;
   width: 83px;
   height: 53px;
   padding: 19px 0;
+  margin-right: 7px;
   color: $color-black-900;
   font-weight: 700;
   font-size: 17px;
@@ -25,6 +27,10 @@
   @media (min-width: $tablet-width) {
     width: 113px;
   }
+}
+
+.size-chooser____label:last-of-type {
+  margin-right: 0;
 }
 
 .size-chooser__item:checked + .size-chooser__label {

@@ -127,6 +127,11 @@
 
 .contacts__map {
   overflow: hidden;
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 45px;
