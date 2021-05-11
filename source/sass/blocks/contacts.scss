@@ -126,6 +126,7 @@
 }
 
 .contacts__map {
+  position: relative;
   overflow: hidden;
   padding-top: 30px;
 
@@ -135,6 +136,27 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 45px;
+  }
+}
+
+.contacts__map--before {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 5;
+  width: 320px;
+  height: 454px;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 45px;
+    width: 527px;
+    height: 457px;
   }
 }
 
