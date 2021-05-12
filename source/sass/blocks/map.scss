@@ -1,11 +1,11 @@
 .map {
-  position: absolute;
-  top: 0;
+  background-image: url("../img/map-mobile.jpg");
 
-  left: 0;
-  z-index: 2;
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+  }
 
   @media (min-width: $desktop-width) {
-    top: 45px;
+    background-image: url("../img/map-desktop.jpg");
   }
 }
