@@ -5,7 +5,7 @@
 .page-footer__wrapper {
   margin-left: auto;
   margin-right: auto;
-  padding: 26px 30px 15px;
+  padding: 15px 30px 15px;
 
   @media (min-width: $tablet-width) {
     padding-right: 0;
@@ -20,6 +20,7 @@
   @media (min-width: $desktop-width) {
     max-width: 1050px;
     padding-bottom: 35px;
+    align-items: center;
   }
 }
 
@@ -32,6 +33,15 @@
     padding: 25px;
     padding-left: 0;
   }
+}
+
+.page-footer__logo:hover {
+  color: $primary-color-600;
+}
+
+.page-footer__logo:active {
+  color: $primary-color-600;
+  opacity: 0.3;
 }
 
 .page-footer__social {

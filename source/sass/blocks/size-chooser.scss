@@ -21,7 +21,7 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
-  border: 2px solid $color-lightgrey-300;
+  border: 2px solid rgba($color-black-900, 0.1);
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -35,4 +35,8 @@
 
 .size-chooser__item:checked + .size-chooser__label {
   border: 2px solid $primary-color-300;
+}
+
+.size-chooser__label:hover {
+  border-color: rgba($color-lightgrey-300, 0.3);
 }

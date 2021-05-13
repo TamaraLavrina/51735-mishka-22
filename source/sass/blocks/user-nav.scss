@@ -41,14 +41,12 @@
 }
 
 .user-nav__item a:hover {
-  opacity: 0.6;
+  color: rgba($color-black-900, 0.6);
 }
-//* что здесь не так? *//
-.user-nav__item a:hover .user-nav__icon {
-  opacity: 1;
 
+.user-nav__item a:hover .user-nav__icon {
   path {
-    fill: #63d1bb;
+    fill: $primary-color-200;
   }
 }
 
@@ -61,7 +59,7 @@
   opacity: 0.3;
 
   path {
-    fill: #63d1bb;
+    fill: $primary-color-200;
   }
 }
 
@@ -140,4 +138,8 @@
     position: absolute;
     opacity: 0;
   }
+}
+
+.user-nav__search:hover .iser-nav__icon--search {
+  color: $primary-color-200;
 }

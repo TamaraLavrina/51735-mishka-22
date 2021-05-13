@@ -63,6 +63,7 @@
     line-height: 57px;
     margin: 0;
     padding: 35px 0;
+    padding-bottom: 30px;
   }
 }
 
@@ -146,7 +147,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 119px 11px auto;
+    margin: 20px 119px 11px auto;
     width: 230px;
   }
 }
