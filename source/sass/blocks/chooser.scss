@@ -7,6 +7,8 @@
 .chooser__list {
   padding-left: 0;
   list-style: none;
+  margin-top: 0;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/7;
@@ -27,4 +29,18 @@
 
 .chooser__item {
   padding-left: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 23px;
+}
+
+.chooser__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.chooser__item--radio {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-bottom: 0;
+  margin-top: 0;
 }

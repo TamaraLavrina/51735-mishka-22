@@ -1,9 +1,13 @@
+.text-field {
+  position: relative;
+}
+
 .text-field__label {
   display: block;
   line-height: 18px;
   font-size: 17px;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 0;
   position: relative;
   user-select: none;
 
@@ -14,16 +18,39 @@
 
 .text-field__input {
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid $color-black-900;
   background-color: inherit;
   width: 100%;
-  padding: 16px 17px;
+  padding: 16px  5px 13px 0;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.text-field__input-svg {
+  position: absolute;
+  top: 17px;
+  right: 4px;
+  color: rgba($color-black-900, 0.2);
+  fill: rgba($color-black-900, 0.2);
+}
+
+.text-field__input:hover {
+  border-color: $primary-color-300;
+}
+
+//* что-то не растет кокос с перекраской иконок (( *//
+.text-field__input:hover + svg .text-field__input-svg {
+  color: $primary-color-300;
+  fill: $primary-color-300;
 }
 
 .text-field__input--add-area {
   border: 2px solid $color-black-900;
-  padding: 17px;
+  padding: 14px 17px;
   width: 100%;
+  font-size: 17px;
+  line-height: 18px;
+
 
   @media (min-width: $tablet-width) {
     padding: 17px;

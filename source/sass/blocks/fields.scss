@@ -12,6 +12,8 @@
 .fields__list {
   list-style: none;
   padding-left: 0;
+  padding-top: 30px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/5;
@@ -21,4 +23,20 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/6;
   }
+}
+
+.fields__list--contacts {
+  padding-top: 0;
+}
+
+.fields__list--add {
+  padding-top: 20px;
+}
+
+.fields__item {
+  margin-bottom: 22px;
+}
+
+.fields__item:last-of-type {
+  margin-bottom: 0;
 }
