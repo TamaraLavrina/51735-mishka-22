@@ -28,12 +28,26 @@
   }
 }
 
+.user-nav__icon {
+  opacity: 0.2;
+  position: absolute;
+  top: 32px;
+  left: calc(50% - 130px);
+
+  @media (min-width: $tablet-width) {
+    top: 36px;
+    left: 33px;
+  }
+}
+
 .user-nav__item a:hover {
-  opacity: 0.6;
+  color: rgba($color-black-900, 0.6);
 }
 
 .user-nav__item a:hover .user-nav__icon {
-  fill: #63d1bb;
+  path {
+    fill: $primary-color-200;
+  }
 }
 
 .user-nav__item a:active {
@@ -43,7 +57,10 @@
 
 .user-nav__item a:active .user-nav__icon {
   opacity: 0.3;
-  fill: #63d1bb;
+
+  path {
+    fill: $primary-color-200;
+  }
 }
 
 .user-nav__cart {
@@ -59,13 +76,31 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    max-width: 100%;
+    padding-left: 82px;
+    padding-top: 32px;
+    padding-bottom: 0;
   }
 }
 
+.user-nav__cart::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+
 .user-nav__search {
   max-width: 260px;
-  padding-top: 29px;
-  padding-bottom: 27px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   padding-left: 46px;
   display: block;
   margin-left: auto;
@@ -73,25 +108,38 @@
   color: $color-black-900;
   text-decoration: none;
 
-
   @media (min-width: $tablet-width) {
     border: none;
+    border-left: 1px solid $color-lightgrey-300;
+    border-right: 1px solid $color-lightgrey-300;
+    padding-right: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 45px;
+    margin: 0;
   }
 }
 
-.user-nav__link-text {
-  @media (min-width: $desktop-width) {
+.user-nav__search::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.user-nav__icon {
-  opacity: 0.2;
-  position: absolute;
-  top: 32px;
-  left: calc(50% - 130px);
+.user-nav__link-text {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    opacity: 0;
+  }
+}
+
+.user-nav__search:hover .iser-nav__icon--search {
+  color: $primary-color-200;
 }

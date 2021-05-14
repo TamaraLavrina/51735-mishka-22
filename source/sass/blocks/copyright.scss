@@ -1,0 +1,32 @@
+.copyright__text {
+  text-decoration: none;
+  color: $color-black-900;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-right: 27px;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  padding-top: 6px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.copyright__icon {
+  color: $primary-color-200;
+}
+
+.copyright__link:hover .copyright__icon {
+  color: $primary-color-600;
+}
+
+.copyright__link:active .copyright__icon {
+  color: rgba($primary-color-600, 0.3);
+}

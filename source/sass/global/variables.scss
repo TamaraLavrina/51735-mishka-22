@@ -2,6 +2,7 @@ $color-white-00: #ffffff;
 $color-lightgrey-200:#f1f1f1;
 $color-lightgrey-250:#ececec;
 $color-lightgrey-300:#e5e5e5;
+$color-lightgrey-400:#c4c4c4;
 $color-lightgrey-150:#fbfbfb;
 $color-lightgrey-160:#f9f9f9;
 
@@ -11,9 +12,10 @@ $color-black-900: #000000;
 //color
 $primary-color-200:#63d1bb;
 $primary-color-300:#62d1ba;
+$primary-color-350:#59d5bc;
 $primary-color-500:#56c3b2;
+$primary-color-600:#46c1ae;
 $primary-color-550:#46c1ae;
-
 
 //font
 $font-family: "Open Sans", "Arial", sans-serif;
@@ -30,6 +32,6 @@ $mobile-width-only: 767px;
 
 @mixin title {
   font-weight: 700;
-  font-size: 30px;
-  line-height: 25px;
+  font-size: 25px;
+  line-height: 30px;
 }

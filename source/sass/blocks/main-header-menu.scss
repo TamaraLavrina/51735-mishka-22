@@ -2,6 +2,7 @@
   // по идеи он же упирается в края, значит ему не задавать максимальную ширину?  max-width: 320px;
 
   @media (min-width: $tablet-width) {
+
     max-width: 668px;
     margin: 0 auto;
     display: flex;
@@ -14,8 +15,8 @@
 
 .main-header-menu__link {
   display: block;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 19px;
+  line-height: 24px;
   color: $color-white-00;
   font-weight: 700;
 
@@ -25,7 +26,7 @@
     height: 62px;
     position: absolute;
     left: calc(50% + 73px);
-    top: 31px;
+    top: 23px;
     content: "";
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -34,20 +35,14 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     width: 300px;
+    font-size: 20px;
+    line-height: 30px;
 
     &::after {
-      right: 35px;
+      right: 28px;
       left: auto;
+      top: 30px;
     }
-  }
-}
-
-.main-header-menu__link--interior {
-  position: relative;
-  background-color: $primary-color-200;
-
-  &::after {
-    background-image: url("../img/interior.svg");
   }
 }
 
@@ -57,7 +52,42 @@
 
   &::after {
     background-image: url("../img/toy.svg");
+    opacity: 0.5;
+    right: 33px;
   }
+}
+
+.main-header-menu__link--interior {
+  position: relative;
+  background-color: $primary-color-200;
+
+  &::after {
+    background-image: url("../img/interior.svg");
+    opacity: 0.5;
+  }
+}
+
+.main-header-menu__link:hover {
+  //*transition: margin-top 0s ease-in-out 0s;*//
+  transform: translate(0, -5px);
+
+  &::after {
+    opacity: 0.7;
+  }
+}
+
+.main-header-menu__link:active {
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.main-header-menu__link--interior:hover {
+  background-color: $primary-color-350;
+}
+
+.main-header-menu__link--toys:hover {
+  background-color: $primary-color-600;
 }
 
 .main-header-menu__text {
@@ -69,10 +99,10 @@
 
   @media (min-width: $tablet-width) {
     max-width: none;
-    padding: 25px 167px 34px 36px;
+    padding: 25px 115px 34px 36px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 25px 350px 34px 37px;
+  @media (min-width: $desktop-width) {
+    padding: 25px 310px 34px 37px;
   }
 }

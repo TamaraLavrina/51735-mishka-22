@@ -5,16 +5,22 @@
 .page-footer__wrapper {
   margin-left: auto;
   margin-right: auto;
-  padding: 26px 30px 15px;
+  padding: 15px 30px 15px;
 
   @media (min-width: $tablet-width) {
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 28px;
     max-width: 668px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: baseline;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    padding-bottom: 35px;
+    align-items: center;
   }
 }
 
@@ -22,8 +28,20 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    padding-left: 0;
   }
+}
+
+.page-footer__logo:hover {
+  color: $primary-color-600;
+}
+
+.page-footer__logo:active {
+  color: $primary-color-600;
+  opacity: 0.3;
 }
 
 .page-footer__social {
@@ -31,9 +49,6 @@
   width: 260px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 59px;
-  padding-right: 59px;
-
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -49,5 +64,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding-top: 17px;
   }
 }

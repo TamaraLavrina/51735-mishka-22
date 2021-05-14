@@ -7,21 +7,25 @@
     list-style: none;
     flex-wrap: wrap;
     font-weight: 700;
+    padding-left: 0;
+    margin-top: 20px;
   }
 }
 
 .header-info__comment {
   text-align: right;
-  height: 50px;
-  margin-top: -25px;
+  height: 20px;
+  margin-top: -45px;
+  padding-right: 2px;
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
 .header-info__list li {
-  margin-right: 45px;
+  margin-right: 65px;
 }
 
 .header-info__list li:last-child {
