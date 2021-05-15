@@ -10,6 +10,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    font-size: 19px;
+    line-height: 18px;
   }
 }
 
@@ -18,22 +20,36 @@
   content: "";
   position: absolute;
   left: -60px;
-  top: -7px;
   width: 40px;
   height: 40px;
+
   border: 2px solid $color-black-900;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -77px;
+    top: -17px;
+    width: 51px;
+    height: 51px;
+  }
 }
 
 .control__input--radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: -48px;
-  width: 16px;
-  height: 16px;
+  top: -3px;
+  left: -62px;
+  width: 20px;
+  height: 20px;
   background-color: $primary-color-300;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: -3px;
+    left: -62px;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .control__input--checkbox + label::before {
@@ -44,6 +60,13 @@
   width: 38px;
   height: 38px;
   border: 2px solid $color-black-900;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+    top: -16px;
+    left: -80px;
+  }
 }
 
 .control__input--checkbox:checked + label::after {
@@ -56,6 +79,14 @@
   background-image: url("../img/checked.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    left: -72px;
+    height: 30px;
+    width: 34px;
+    top: -5px;
+    background-size: 120%;
+  }
 }
 
 .control__input + label:hover::before {

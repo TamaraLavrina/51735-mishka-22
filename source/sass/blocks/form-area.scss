@@ -4,7 +4,10 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 320px;
-  margin-top: 17px;
+  padding-top: 17px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 13px;
   font-size: 13px;
   line-height: 24px;
 
@@ -12,6 +15,8 @@
     display: grid;
     padding-right: 0;
     padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 13px;
     max-width: 668px;
     margin-top: 54px;
     font-size: 17px;
@@ -19,11 +24,12 @@
   }
 
   @media (min-width: $desktop-width) {
-
-    margin-top: 99px;
+    padding-top: 120px;
+    margin-top: 0;
+    max-width: 700px;
   }
 }
 
 .form-area__form {
-  padding-top: 18px;
+  padding-top: 0;
 }

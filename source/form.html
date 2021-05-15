@@ -43,17 +43,15 @@
           </a>
         </li>
         <li class="user-nav__item">
-          <a class="user-nav__cart" href="blank.html">
-            <svg class="user-nav__icon user-nav__icon--cart" width="21" height="18" viewBox="0 0 21 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"
-                fill="#000000" />
-            </svg>
-            Корзина:
-            <span>пока пуста</span>
-          </a>
-        </li>
+          <li class="user-nav__item">
+            <a class="user-nav__cart" href="blank.html">
+              <svg class="user-nav__icon user-nav__icon--cart" width="21" height="18">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg>
+              Корзина:
+              <span>пока пуста</span>
+            </a>
+          </li>
       </ul>
       <button class="main-nav__toggle-navigate toggle-navigate" type="button">
         <span class="visually-hidden">
@@ -77,7 +75,7 @@
     <section class="form-area">
       <p class="form-area__intro">
         Мы будем рады воплотить в жизнь ваши пожелания!
-        Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        Заполните простую&nbsp;форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
 
       <!--  форма-->
@@ -169,8 +167,8 @@
         </fieldset>
         <div class="form__wrapper">
           <!--цветная обертка/серый-->
-          <!-- группа полей, текст-->
-          <div class="form__group form__group--contacts-add fields">
+          <!-- группа полей контакты, текстовые поля-->
+          <div class="form__group form__group--contacts fields">
             <span class="form__legend-name">Тел</span>
             <div class="fields__list fields__list--contacts">
               <div class="fields__item text-field">
@@ -182,10 +180,7 @@
                   </svg>
               </div>
             </div>
-
-          </div>
-          <!-- группа полей, текст-->
-          <div class="form__group form__group--contacts-add fields">
+            <!--  текстовое поле-->
             <span class="form__legend-name">E-mail</span>
             <div class="fields__list fields__list--contacts">
               <div class="fields__item text-field">
@@ -201,7 +196,7 @@
         </div>
 
         <!-- группа полей, текст-->
-        <div class="form__group form__group--contacts-add fields">
+        <div class="form__group form__group--add fields">
           <span class="form__legend-name">Доп</span>
           <div class="fields__list fields__list--add">
             <div class="fields__item text-field">
@@ -228,29 +223,43 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo logo">
-        <img class="logo__image " src="img/logo-footer.svg" width="102" height="34"
-          alt="логотип интернет магазина «Мишка»">
+        <svg class="logo__image" width="102" height="34">
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
+        </svg>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/htmlacademy"><img src="img/insta-logo.svg"
-                width="22" height="21"></a>
+            <a class="social__link" href="https://www.instagram.com/htmlacademy">
+              <svg class="social__icon" width="22" height="21">
+                <use xlink:href="img/sprite.svg#insta"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.facebook.com/htmlacademy"><img src="img/fb-logo.svg" width="15"
-                height="29"></a>
+            <a class="social__link" href="https://www.facebook.com/htmlacademy">
+                <svg class="social__icon" width="15" height="29">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+                </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.twitter.com/htmlacademy"><img src="img/twitter-logo.svg"
-                width="24" height="20"></a>
+            <a class="social__link" href="https://www.twitter.com/htmlacademy">
+                <svg class="social__icon" width="24" height="20">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+
+              </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img
-            src="img/htmlacademy-logo.svg"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
+          <svg class="copyright__icon" width="27" height="35">
+            <use xlink:href="img/sprite.svg#academy"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

@@ -1,5 +1,15 @@
 .text-field {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+}
+
+.text-field:hover .text-field__input-svg {
+  color: $primary-color-200;
 }
 
 .text-field__label {
@@ -12,7 +22,8 @@
   user-select: none;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    margin-right: 26px;
+    font-size: 19px;
   }
 }
 
@@ -24,6 +35,10 @@
   padding: 16px  5px 13px 0;
   font-size: 17px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 17px;
+  }
 }
 
 .text-field__input-svg {
@@ -32,19 +47,18 @@
   right: 4px;
   color: rgba($color-black-900, 0.2);
   fill: rgba($color-black-900, 0.2);
+
+  @media (min-width: $tablet-width) {
+    right: 23px;
+  }
 }
 
 .text-field__input:hover {
   border-color: $primary-color-300;
 }
 
-//* что-то не растет кокос с перекраской иконок (( *//
-.text-field__input:hover + svg .text-field__input-svg {
-  color: $primary-color-300;
-  fill: $primary-color-300;
-}
-
 .text-field__input--add-area {
+  font-family: $font-family;
   border: 2px solid $color-black-900;
   padding: 14px 17px;
   width: 100%;
@@ -53,10 +67,15 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 17px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     font-size: 19px;
     line-height: 19px;
   }
+}
+
+.text-field__input:active .text-field__input-svg {
+  color: $primary-color-200;
 }
 
 .element__label {

@@ -19,6 +19,7 @@
   @media (min-width: $tablet-width) {
     max-width: 230px;
     order: -1;
+    margin: 0;
   }
 }
 
@@ -31,7 +32,7 @@
   padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 0;
+    padding: 30px 0;
     max-width: 668px;
     font-size: 19px;
     line-height: 18px;
@@ -42,19 +43,27 @@
   @media (min-width: $desktop-width) {
     max-width: 1050px;
     grid-template-columns: repeat(6, 1fr);
+    padding: 28px 0;
   }
 }
 
-.form__group--contacts-add {
+.form__group--contacts {
   padding-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
 }
+
 
 .form__group--footnotes {
   @media (min-width: $tablet-width) {
     display: flex;
     max-width: 668px;
     justify-content: space-between;
-    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 21px;
 
     @media (min-width: $desktop-width) {
       max-width: 700px;
@@ -66,6 +75,12 @@
   font-size: 14px;
   line-height: 16px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .form__legend-name {
