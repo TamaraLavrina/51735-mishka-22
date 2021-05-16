@@ -12,14 +12,15 @@
 .fields__list {
   list-style: none;
   padding-left: 0;
-  padding-top: 30px;
+  //padding-top: 30px;
   margin: 0;
+  padding-top: 13px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/5;
     padding-left: 0;
-    padding-top: 4px;
-    padding-bottom: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,17 +30,29 @@
 
 .fields__list--contacts {
   padding-top: 0;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 23px;
+    padding-top: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.fields__list--mail {
+  padding-top: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     padding-bottom: 0;
   }
 }
 
 .fields__list--add {
+  padding-top: 20px;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
-    padding-top: 20px;
   }
 }
 

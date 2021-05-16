@@ -4,11 +4,18 @@
   }
 }
 
+.chooser--checkbox {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+    padding-top: 45px;
+  }
+}
+
 .chooser__list {
   padding-left: 0;
   list-style: none;
   margin-top: 0;
-  padding-top: 25px;
+  padding-top: 12px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/7;
@@ -19,6 +26,9 @@
 }
 
 .chooser__list--columns {
+  padding-top: 9px;
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -37,12 +47,13 @@
   padding-left: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     padding-top: 15px;
     padding-bottom: 17px;
     padding-left: 80px;
+    margin-bottom: 26px;
   }
 }
 

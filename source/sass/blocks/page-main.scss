@@ -7,6 +7,7 @@
 }
 
 .page-main__title {
+  position: relative;
   padding-top: 70px;
   padding-bottom: 74px;
   text-align: center;
@@ -27,5 +28,26 @@
     line-height: 57px;
     padding-top: 42px;
     padding-bottom: 94px;
+  }
+}
+
+.page-main__title::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    bottom: -11px;
+    height: 25px;
+    right: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: 85%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 37px;
+    background-size: 100%;
+    bottom: -15px;
   }
 }
