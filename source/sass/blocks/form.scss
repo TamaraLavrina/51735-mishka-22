@@ -46,7 +46,7 @@
   @media (min-width: $desktop-width) {
     max-width: 1050px;
     grid-template-columns: repeat(6, 1fr);
-    padding: 28px 0;
+    padding: 30px 0 28px;
   }
 }
 
@@ -128,5 +128,12 @@
   .form__legend-name::after,
   .form__legend-name--short::after {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__legend-name {
+    top: 65px;
+    margin-left: 60px;
   }
 }

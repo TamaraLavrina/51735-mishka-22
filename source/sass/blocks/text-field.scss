@@ -55,6 +55,10 @@
   @media (min-width: $tablet-width) {
     right: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 7px;
+  }
 }
 
 .text-field__input-svg--mail {
@@ -62,6 +66,10 @@
 
   @media (min-width: $tablet-width) {
     right: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 4px;
   }
 }
 
