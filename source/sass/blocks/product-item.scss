@@ -28,6 +28,7 @@
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
+  color: $color-black-900;
 }
 
 .product-item__property {
@@ -45,7 +46,7 @@
 .product-item__description {
   display: grid;
   padding: 27px;
-  margin-top: -7px;
+  margin-top: -5px;
 
 
   @media (min-width: $tablet-width) {

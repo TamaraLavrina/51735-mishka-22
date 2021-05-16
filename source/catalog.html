@@ -6,40 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
-
 <body class="page__body">
   <header class="page-header">
-    <button class="page-header__toggle-navigate toggle-navigate" type="button">
-      <span class="visually-hidden">
-        Открыть меню
-      </span>
-    </button>
-    <nav class="page-header__main-nav main-nav">
-      <a href="index.html" class="main-nav__logo logo">
-        <img class="logo__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+    <nav class="page-header__main-nav main-nav main-nav--opened main-nav--nojs">
+      <a class="main-nav__logo logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+          <img class="logo__image" src="img/mishka-logo-mobile.svg" width="86" height="35"
+            alt="Интернет-магазин «Мишка»">
+        </picture>
       </a>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="#">
+          <a href="catalog.html">
             Каталог товаров
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html">
+          <a href="#">
             Вязание на заказ
           </a>
         </li>
       </ul>
-      <div class="main-nav__user-nav user-nav">
-        <a class="user-nav__search">
-          Поиск по сайту
-        </a>
-        <a class="user-nav__cart" href="blank.html">
-          Корзина:
-          <span>пока пуста</span>
-        </a>
-      </div>
+      <ul class="main-nav__user-nav user-nav">
+        <li class="user-nav__item">
+          <a class="user-nav__search" href=#>
+            <svg class="user-nav__icon user-nav__icon--search" width="18" height="18">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+            <span class="user-nav__link-text">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="user-nav__item">
+          <li class="user-nav__item">
+            <a class="user-nav__cart" href="blank.html">
+              <svg class="user-nav__icon user-nav__icon--cart" width="21" height="18">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg>
+              Корзина:
+              <span>пока пуста</span>
+            </a>
+          </li>
+      </ul>
+      <button class="main-nav__toggle-navigate toggle-navigate" type="button">
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
     </nav>
     <div class="page-header__info header-info">
       <ul class="header-info__list">
@@ -75,7 +93,9 @@
               <div class="product-item__buy buy">
                 <p class="buy__price"> 1 200 руб.</p>
                 <a class="buy__add-cart" aria-label="Добавить в корзину" href="#">
-                  <img src="img/cart.svg" width="20" height="19">
+                  <svg class="buy__icon-cart" width="20" height="19">
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -97,7 +117,9 @@
               <div class="product-item__buy buy">
                 <p class="buy__price"> 690 руб.</p>
                 <a class="buy__add-cart" aria-label="Добавить в корзину" href="#">
-                  <img src="img/cart.svg" width="20" height="19">
+                  <svg class="buy__icon-cart" width="20" height="19">
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -119,7 +141,9 @@
               <div class="product-item__buy buy">
                 <p class="buy__price"> 1 500 руб.</p>
                 <a class="buy__add-cart" aria-label="Добавить в корзину" href="#">
-                  <img src="img/cart.svg" width="20" height="19">
+                  <svg class="buy__icon-cart" width="20" height="19">
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                  </svg>
                 </a>
               </div>
             </div>
