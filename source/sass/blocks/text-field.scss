@@ -50,7 +50,7 @@
   bottom: 16px;
   right: 6px;
   color: rgba($color-black-900, 0.2);
-  fill: rgba($color-black-900, 0.2);
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     right: 23px;

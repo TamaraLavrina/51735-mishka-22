@@ -10,6 +10,7 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
+
 <body class="page__body">
   <header class="page-header">
     <nav class="page-header__main-nav main-nav main-nav--opened main-nav--nojs">
@@ -43,15 +44,14 @@
           </a>
         </li>
         <li class="user-nav__item">
-          <li class="user-nav__item">
-            <a class="user-nav__cart" href="blank.html">
-              <svg class="user-nav__icon user-nav__icon--cart" width="21" height="18">
-                <use xlink:href="img/sprite.svg#cart"></use>
-              </svg>
-              Корзина:
-              <span>пока пуста</span>
-            </a>
-          </li>
+          <a class="user-nav__cart" href="blank.html">
+            <svg class="user-nav__icon user-nav__icon--cart" width="21" height="18">
+              <use xlink:href="img/sprite.svg#cart"></use>
+            </svg>
+            Корзина:
+            <span>пока пуста</span>
+          </a>
+        </li>
       </ul>
       <button class="main-nav__toggle-navigate toggle-navigate" type="button">
         <span class="visually-hidden">
@@ -86,7 +86,7 @@
         <fieldset class="form__group chooser">
           <legend class="form__legend-name">Тип</legend>
           <!-- список радиокнопок-->
-          <ul class="chooser__list">
+          <ul class="chooser__list chooser__list--radio">
             <!-- элемент cписка -->
             <li class="chooser__item chooser__item--radio control">
               <!-- инпут поля радио-->
@@ -155,8 +155,7 @@
             </li>
             <li class="fields__item text-field">
               <label for="input__surname" class="text-field__label">Фамилия:</label>
-              <input class="text-field__input" type="text" name="user-surname"
-                placeholder="Укажите фамилию*" required>
+              <input class="text-field__input" type="text" name="user-surname" placeholder="Укажите фамилию*" required>
             </li>
             <li class="fields__item text-field">
               <label for="patronimic" class="text-field__label">Отчество:</label>
@@ -175,9 +174,9 @@
                 <label for="pnone-input" class="visually-hidden">Телефон</label>
                 <input class="text-field__input text-field__input--wide-text" id="pnone-input" type="tel" name="tel"
                   placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-                  <svg class="text-field__input-svg" width="25" height="24">
-                    <use xlink:href="img/sprite.svg#phone"></use>
-                  </svg>
+                <svg class="text-field__input-svg" width="25" height="24">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
               </div>
             </div>
             <!--  текстовое поле-->
@@ -185,11 +184,11 @@
             <div class="fields__list fields__list--mail">
               <div class="fields__item text-field">
                 <label for="e-mail-input" class="visually-hidden"> email</label>
-                <input class="text-field__input text-field__input--wide-text" type="email" id="e-mail-input" name="email"
-                  placeholder="Ваш Email*" required>
-                  <svg class="text-field__input-svg text-field__input-svg--mail" width="32" height="21">
-                    <use xlink:href="img/sprite.svg#mail"></use>
-                  </svg>
+                <input class="text-field__input text-field__input--wide-text" type="email" id="e-mail-input"
+                  name="email" placeholder="Ваш Email*" required>
+                <svg class="text-field__input-svg text-field__input-svg--mail" width="32" height="21">
+                  <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
               </div>
             </div>
           </div>
@@ -238,18 +237,18 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.facebook.com/htmlacademy">
-                <svg class="social__icon" width="15" height="29">
-                  <use xlink:href="img/sprite.svg#facebook"></use>
-                </svg>
-                </a>
+              <svg class="social__icon" width="15" height="29">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.twitter.com/htmlacademy">
-                <svg class="social__icon" width="24" height="20">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
-                </svg>
+              <svg class="social__icon" width="24" height="20">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
 
-              </a>
+            </a>
           </li>
         </ul>
       </div>

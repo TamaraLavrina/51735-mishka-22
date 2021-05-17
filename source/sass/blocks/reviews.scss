@@ -75,17 +75,21 @@
   left: -30px;
   right: -30px;
   z-index: 10;
-  background-size: 85%;
+  background-size: auto 6px;
   background-position: center;
 
   @media (min-width: $tablet-width) {
     height: 17px;
-    background-size: 100%;
+    background-size: auto 17px;
+    left: -50px;
+    right: -50px;
   }
 
   @media (min-width: $desktop-width) {
     height: 25px;
-    background-size: 100%;
+    background-size: auto 23px;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -140,6 +144,10 @@
 }
 
 .reviews__author {
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 5px;
   }
