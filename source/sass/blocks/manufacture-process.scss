@@ -10,8 +10,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     max-width: 668px;
-    margin-bottom: 64px;
-    margin-top: 47px;
+    margin-bottom: 69px;
+    margin-top: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +19,7 @@
     margin-bottom: 97px;
     border: 1px solid $color-lightgrey-250;
     padding: 0;
-    margin-top: 68px;
+    margin-top: 55px;
     display: grid;
     grid-template-columns: 682px 1fr;
     grid-template-rows: min-content 1fr min-content;
@@ -32,7 +32,7 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 33px 5px 25px 107px;
+    padding: 45px 5px 25px 107px;
     margin: 0;
   }
 
@@ -59,12 +59,9 @@
 
 .manufacture-process__video-background {
   @media (min-width: $tablet-width) {
+    display: block;
     width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 100%;
-    width: auto;
+    height: auto;
   }
 }
 

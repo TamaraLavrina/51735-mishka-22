@@ -78,7 +78,7 @@
         <ul class="product-catalog__product-list">
           <li class="product-catalog__product-item product-item">
             <a  href="#">
-              <picture>
+              <picture class="product-item__picture">
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
                 <source type="image/webp" src="img/product-1-catalog.webp" srcset="img/product-1-catalog@2x.webp 2x">
@@ -105,7 +105,7 @@
           </li>
           <li class="product-catalog__product-item product-item">
             <a href="#">
-              <picture>
+              <picture class="product-item__picture">
                 <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
                 <img class="product-item__img" src="img/product-2-catalog-cart.jpg" srcset="img/product-2-catalog@2x.jpg 2x" width="260" height="195"
@@ -129,7 +129,7 @@
           </li>
           <li class="product-item">
             <a href="#">
-              <picture>
+              <picture class="product-item__picture">
                 <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                 <img class="product-item__img" src="img/product-3-catalog-cart-toys.jpg"
@@ -138,7 +138,7 @@
             </a>
             <div class="product-item__description">
               <a href="#">
-                <h3 class="product-item__title title">Большая корзинка для игрушек</h3>
+                <h3 class="product-item__title title">Большая корзинка для&nbsp;игрушек</h3>
               </a>
               <p class="product-item__property">Диаметр 30 см, высота 30 см</p>
               <div class="product-item__buy buy">
@@ -155,7 +155,7 @@
         <section class="manufacture-process">
           <h2 class="manufacture-process__title title">Процесс производства</h2>
           <div class="manufacture-process__video video">
-            <picture>
+            <picture class="manufacture-process__picture">
             <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
             <img class="manufacture-process__video-background" src="img/video.jpg"  alt="замещающая картинка видеоплеер"
               width="260" height="150">
@@ -174,29 +174,43 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo logo">
-        <img class="logo__image " src="img/logo-footer.svg" width="102" height="34"
-          alt="логотип интернет магазина «Мишка»">
+        <svg class="logo__image" width="102" height="34">
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
+        </svg>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><img
-                src="img/insta-logo.svg" width="22" height="21"></a>
+            <a class="social__link" href="https://www.instagram.com/htmlacademy">
+              <svg class="social__icon" width="22" height="21">
+                <use xlink:href="img/sprite.svg#insta"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img
-                src="img/fb-logo.svg" width="15" height="29"></a>
+            <a class="social__link" href="https://www.facebook.com/htmlacademy">
+                <svg class="social__icon" width="15" height="29">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+                </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"><img
-                src="img/twitter-logo.svg" width="24" height="20"></a>
+            <a class="social__link" href="https://www.twitter.com/htmlacademy">
+                <svg class="social__icon" width="24" height="20">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+
+              </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img
-            src="img/htmlacademy-logo.svg"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
+          <svg class="copyright__icon" width="27" height="35">
+            <use xlink:href="img/sprite.svg#academy"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
