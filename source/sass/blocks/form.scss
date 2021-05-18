@@ -137,3 +137,17 @@
     margin-left: 60px;
   }
 }
+
+.form__legend-name--pseudo {
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: static;
+    padding-top: 35px;
+  }
+}
+
+.form__legend-name--pseudo:last-of-type {
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+}
