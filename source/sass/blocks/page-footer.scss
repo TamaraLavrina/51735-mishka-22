@@ -5,7 +5,7 @@
 .page-footer__wrapper {
   margin-left: auto;
   margin-right: auto;
-  padding: 15px 30px 15px;
+  padding: 17px 30px 15px;
 
   @media (min-width: $tablet-width) {
     padding-right: 0;
@@ -52,8 +52,15 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    width: 359px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 740px;
+    padding-right: 35px;
   }
 }
+
 
 .page-footer__copyright {
   display: flex;

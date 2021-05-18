@@ -26,9 +26,8 @@
 
 .main-nav__toggle-navigate {
   position: absolute;
-  top: 20px;
-  right: 0;
-  left: calc(50% + 109px);
+  top: 15px;
+  left: calc(50% + 95px);
   z-index: 2;
   display: block;
   width: 50px;
@@ -50,8 +49,6 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 21px 20px;
-  top: 17px;
-  left: calc(50% + 100px);
 }
 
 @media (max-width: $mobile-width-only) {
@@ -73,8 +70,6 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 21px 20px;
-  top: 17px;
-  left: calc(50% + 100px);
 }
 
 .main-nav__list {

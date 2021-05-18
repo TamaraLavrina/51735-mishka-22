@@ -7,7 +7,8 @@
 }
 
 .page-main__title {
-  padding-top: 74px;
+  position: relative;
+  padding-top: 70px;
   padding-bottom: 74px;
   text-align: center;
   padding-right: 30px;
@@ -19,13 +20,34 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 50px;
+    padding-top: 36px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 20px;
+    padding-top: 42px;
     padding-bottom: 94px;
+  }
+}
+
+.page-main__title::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../img/zigzag-fill.svg");
+    bottom: -11px;
+    height: 25px;
+    right: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: auto 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 37px;
+    background-size: auto 34px;
+    bottom: -15px;
   }
 }
