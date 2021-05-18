@@ -2,3 +2,15 @@
   font-weight: 700;
   margin-bottom: 0;
 }
+
+.buy__add-cart {
+  color: rgba($color-black-900, 0.2);
+}
+
+.buy__add-cart:hover {
+  color: $primary-color-200;
+}
+
+.buy__add-cart:active {
+  color: rgba($primary-color-200, 0.3);
+}

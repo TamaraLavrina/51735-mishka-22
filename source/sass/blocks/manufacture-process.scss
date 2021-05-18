@@ -1,4 +1,6 @@
 .manufacture-process {
+  position: relative;
+  z-index: 1;
   padding-top: 0;
   margin-left: auto;
   margin-right: auto;
@@ -10,8 +12,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     max-width: 668px;
-    margin-bottom: 64px;
-    margin-top: 47px;
+    margin-bottom: 69px;
+    margin-top: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +21,7 @@
     margin-bottom: 97px;
     border: 1px solid $color-lightgrey-250;
     padding: 0;
-    margin-top: 68px;
+    margin-top: 55px;
     display: grid;
     grid-template-columns: 682px 1fr;
     grid-template-rows: min-content 1fr min-content;
@@ -27,15 +29,48 @@
   }
 }
 
+.manufacture-process:hover {
+  @media (max-width: $mobile-width-only) {
+    box-shadow: 0 6px 10px rgba($color-black-900, 0.1);
+  }
+}
+
+
+.manufacture-process::after {
+  @media (min-width: $tablet-width) {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    content: "";
+    height: 286px;
+    width: 666px;
+    background-color: inherit;
+    left: 0;
+    top: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 370px;
+    height: 465px;
+    right: 0;
+    top: 0;
+    left: 679px;
+  }
+}
+
+.manufacture-process:hover::after {
+  box-shadow: 0 6px 10px rgba($color-black-900, 0.1);
+}
+
 .manufacture-process__title {
+  position: relative;
   padding: 7px 13px 27px 90px;
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 33px 5px 25px 107px;
+    padding: 45px 5px 25px 107px;
     margin: 0;
   }
-
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
@@ -43,6 +78,27 @@
     padding: 96px 50px 28px 0;
   }
 }
+
+.manufacture-process__title::after {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 22px;
+  left: 33px;
+  top: 19px;
+  background-image: url("../img/camera.svg");
+
+  @media (min-width: $tablet-width) {
+    left: 42px;
+    top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+    top: 45px;
+  }
+}
+
 
 .manufacture-process__video {
   position: relative;
@@ -59,12 +115,9 @@
 
 .manufacture-process__video-background {
   @media (min-width: $tablet-width) {
+    display: block;
     width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 100%;
-    width: auto;
+    height: auto;
   }
 }
 
