@@ -46,3 +46,7 @@
     margin-bottom: 51px;
   }
 }
+
+.product-catalog__product-item:hover .product-item__description {
+  box-shadow: 0 6px 10px rgba($color-black-900, 0.1);
+}

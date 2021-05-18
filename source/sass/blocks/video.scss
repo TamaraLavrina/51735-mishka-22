@@ -5,8 +5,8 @@
   width: 101px;
   top: 37px;
   left: 80px;
-  background-image: url("../img/play.svg");
   background-color: transparent;
+  padding: 0;
   cursor: pointer;
 
 
@@ -14,6 +14,14 @@
     height: 78px;
     width: 102px;
     top: 189px;
-    left: 283px;
+    left: 290px;
   }
+}
+
+.video__button:hover {
+  transform: scale(1.2);
+}
+
+.video__button:active {
+  opacity: 0.3;
 }
