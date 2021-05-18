@@ -44,6 +44,7 @@
 }
 
 .contacts__title {
+  position: relative;
   display: block;
   font-size: 18px;
   line-height: 30px;
@@ -64,6 +65,22 @@
     margin: 0;
     padding: 35px 0;
     padding-bottom: 30px;
+  }
+}
+
+.contacts__title::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    background-image: url("../img/flag.svg");
+    right: 3px;
+    top: 14px;
+    height: 81px;
+    width: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -110px;
   }
 }
 
