@@ -1,8 +1,5 @@
 .main-header-menu__list {
-  // по идеи он же упирается в края, значит ему не задавать максимальную ширину?  max-width: 320px;
-
   @media (min-width: $tablet-width) {
-
     max-width: 668px;
     margin: 0 auto;
     display: flex;

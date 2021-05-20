@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/open-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
@@ -131,8 +132,10 @@
         <!--контейнер для картинок-->
         <div class="product-special__product-image product-image">
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-triple-set-desktop@1x.webp 1x, img/product-triple-set-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/product-triple-set-tablet@1x.webp 1x, img/product-triple-set-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/product-triple-set-mobile-1.webp 1x, img/product-triple-set-mobile-1@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/product-triple-set-desktop@1x.jpg 1x, img/product-triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="img/product-triple-set-tablet@1x.jpg 1x, img/product-triple-set-tablet@2x.jpg 2x">
             <img class="product-image" src="img/product-triple-set-mobile-1.jpg"
@@ -181,8 +184,7 @@
           <li class="reviews__item slider-item">
             <blockquote>
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-                лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и&nbsp;мои&nbsp;фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                лайков, как у&nbsp;популярных&nbsp;инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке,&nbsp;и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <div class="reviews__author">
                 <cite class="reviews__author-name">Анастасия Красильникова</cite>
                 <p class="reviews__author-nickname">@misssssiskras</p>
@@ -216,7 +218,7 @@
       </div>
       <div class="contacts__map">
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.09256790339!2d30.320014976165776!3d59.939670591093446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620807709610!5m2!1sru!2sru"
-        width="768" height="457" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+        style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <a class="contacts__button button" href="#">Напишите нам</a>
     </section>

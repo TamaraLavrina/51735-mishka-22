@@ -19,10 +19,10 @@ const cartAdd = cartPopup.querySelector(".modal__button");
 
 buyButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  cartPopup.classList.add("modal-show");
+  cartPopup.classList.add("modal--show");
 })
 
 cartAdd.addEventListener("click", function (evt) {
   evt.preventDefault();
-  cartPopup.classList.remove("modal-show");
+  cartPopup.classList.remove("modal--show");
 });
