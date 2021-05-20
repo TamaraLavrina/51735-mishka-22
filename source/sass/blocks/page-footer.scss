@@ -5,7 +5,7 @@
 .page-footer__wrapper {
   margin-left: auto;
   margin-right: auto;
-  padding: 17px 30px 15px;
+  padding: 18px 30px 15px;
 
   @media (min-width: $tablet-width) {
     padding-right: 0;
@@ -32,6 +32,7 @@
     align-items: center;
     padding: 25px;
     padding-left: 0;
+    color: $color-black-900;
   }
 }
 

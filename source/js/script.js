@@ -1,9 +1,5 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle-navigate');
-const buyButton = document.querySelector(".product-special__button");
-const cartPopup = document.querySelector(".modal");
-const cartAdd = cartPopup.querySelector(".modal__button");
-
 navMain.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function () {
@@ -16,12 +12,17 @@ navToggle.addEventListener('click', function () {
   }
 });
 
+
+const buyButton = document.querySelector(".product-special__button");
+const cartPopup = document.querySelector(".modal");
+const cartAdd = cartPopup.querySelector(".modal__button");
+
 buyButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  cartPopup.classList.add("modal-show");
+  cartPopup.classList.add("modal--show");
 })
 
 cartAdd.addEventListener("click", function (evt) {
   evt.preventDefault();
-  cartPopup.classList.remove("modal-show");
+  cartPopup.classList.remove("modal--show");
 });

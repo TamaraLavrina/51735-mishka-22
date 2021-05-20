@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/open-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
+
 <body class="page__body">
   <header class="page-header">
     <nav class="page-header__main-nav main-nav main-nav--opened main-nav--nojs">
@@ -43,15 +45,14 @@
           </a>
         </li>
         <li class="user-nav__item">
-          <li class="user-nav__item">
-            <a class="user-nav__cart" href="blank.html">
-              <svg class="user-nav__icon user-nav__icon--cart" width="21" height="18">
-                <use xlink:href="img/sprite.svg#cart"></use>
-              </svg>
-              Корзина:
-              <span>пока пуста</span>
-            </a>
-          </li>
+          <a class="user-nav__cart" href="blank.html">
+            <svg class="user-nav__icon user-nav__icon--cart" width="21" height="18">
+              <use xlink:href="img/sprite.svg#cart"></use>
+            </svg>
+            Корзина:
+            <span>пока пуста</span>
+          </a>
+        </li>
       </ul>
       <button class="main-nav__toggle-navigate toggle-navigate" type="button">
         <span class="visually-hidden">
@@ -70,17 +71,19 @@
   </header>
   <main class="page-main">
     <section class="page-main__header">
-        <h1 class="page-main__title">Каталог товаров</h1>
+      <h1 class="page-main__title">Каталог товаров</h1>
     </section>
     <section class="product-catalog">
       <h2 class="visually-hidden">Товары</h2>
       <div class="product-catalog__wrapper">
         <ul class="product-catalog__product-list">
           <li class="product-catalog__product-item product-item">
-            <a  href="#">
+            <a href="#">
               <picture class="product-item__picture">
-                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
                 <source type="image/webp" src="img/product-1-catalog.webp" srcset="img/product-1-catalog@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
@@ -106,9 +109,16 @@
           <li class="product-catalog__product-item product-item">
             <a href="#">
               <picture class="product-item__picture">
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.webp 2x">
+                <source type="image/webp" src="img/product-2-catalog-cart.webp"
+                  srcset="img/product-2-catalog@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                <img class="product-item__img" src="img/product-2-catalog-cart.jpg" srcset="img/product-2-catalog@2x.jpg 2x" width="260" height="195"
+                <img class="product-item__img" src="img/product-2-catalog-cart.jpg"
+                  srcset="img/product-2-catalog@2x.jpg 2x" width="260" height="195"
                   alt="двухцветная небольшая корзинка">
               </picture>
             </a>
@@ -130,10 +140,17 @@
           <li class="product-catalog__product-item product-item">
             <a href="#">
               <picture class="product-item__picture">
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp" src="img/product-3-catalog-cart-toys.webp"
+                  srcset="img/product-3-catalog-cart-toys@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                 <img class="product-item__img" src="img/product-3-catalog-cart-toys.jpg"
-                  srcset="img/product-3-catalog-cart-toys@2x.jpg 2x" width="260" height="195" alt="двухцветная большая корзина с выоским бортом">
+                  srcset="img/product-3-catalog-cart-toys@2x.jpg 2x" width="260" height="195"
+                  alt="двухцветная большая корзина с выоским бортом">
               </picture>
             </a>
             <div class="product-item__description">
@@ -156,9 +173,13 @@
           <h2 class="manufacture-process__title title">Процесс производства</h2>
           <div class="manufacture-process__video video">
             <picture class="manufacture-process__picture">
-            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img class="manufacture-process__video-background" src="img/video.jpg"  alt="замещающая картинка видеоплеер"
-              width="260" height="150">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+              <source  type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+              <source  type="image/webp" src="img/video.weebp" srcset="img/video@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="manufacture-process__video-background" src="img/video.jpg" srcset="img/video@2x.jpg 2x"
+                alt="замещающая картинка видеоплеер" width="260" height="150">
             </picture>
             <button type="button" class="video__button" aria-label="проиграть видео">
               <img src="img/play.svg" width="101" heiht="77" alt="Кнопка начала проигрывания видео">
@@ -174,7 +195,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo logo">
+      <a class="page-footer__logo logo" href="index.html">
         <svg class="logo__image" width="102" height="34">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
@@ -190,18 +211,18 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.facebook.com/htmlacademy">
-                <svg class="social__icon" width="15" height="29">
-                  <use xlink:href="img/sprite.svg#facebook"></use>
-                </svg>
-                </a>
+              <svg class="social__icon" width="15" height="29">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.twitter.com/htmlacademy">
-                <svg class="social__icon" width="24" height="20">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
-                </svg>
+              <svg class="social__icon" width="24" height="20">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
 
-              </a>
+            </a>
           </li>
         </ul>
       </div>
@@ -215,7 +236,26 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <section class="modal">
+    <div class="modal__container">
+      <form action="#" method="POST">
+        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+        <p> Выберите размер:</p>
+        <div class="size-chooser">
+          <input class="size-chooser__item visually-hidden" type="radio" name="size" id="size_1" value="S">
+          <label class="size-chooser__label" for="size_1">S</label>
+
+          <input class="size-chooser__item visually-hidden" type="radio" name="size" id="size_2" value="M">
+          <label class="size-chooser__label" for="size_2">M</label>
+
+          <input checked class="size-chooser__item visually-hidden" type="radio" name="size" id="size_3" value="L">
+          <label class="size-chooser__label" for="size_3">L</label>
+        </div>
+        <button class="modal__button modal__button--add button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </section>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

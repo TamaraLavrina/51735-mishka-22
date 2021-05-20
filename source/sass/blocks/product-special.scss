@@ -35,23 +35,29 @@
 .product-special__wrapper::after {
   content: "";
   position: absolute;
-  background-image: url("../img/zigzag-line-desktop.svg");
+  background-image: url("../img/zigzag-line.svg");
   background-repeat: repeat-x;
   height: 7px;
   bottom: 0;
-  left: -30px;
-  right: -30px;
+  left: 0;
+  right: 0;
   z-index: 10;
-  background-size: 85%;
+  background-size: auto 6px;
   background-position: center;
 
   @media (min-width: $tablet-width) {
     height: 25px;
-    background-size: 100%;
+    background-size: auto 17px;
+    left: -50px;
+    right: -50px;
+    bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 25px;
+    background-size: auto 23px;
+    left: 0;
+    right: 0;
+    bottom: -6px;
   }
 }
 
@@ -108,15 +114,18 @@
     align-items: start;
     justify-content: end;
     display: grid;
-    text-align: right;
+    text-align: center;
+    margin-left: auto;
+    padding-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
-    margin-right: 43px;
+    margin-right: 0;
     grid-column: 1/2;
     grid-row: 1/2;
     margin-top: 0;
+    text-align: center;
+    margin-left: 31px;
   }
 }
 
@@ -133,6 +142,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/4;
     grid-row: 2/3;
+    padding-top: 0;
   }
 }
 
@@ -184,6 +194,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 4/8;
     grid-row: 1/4;
+    padding-top: 16px;
   }
 }
 
@@ -219,6 +230,10 @@
     padding-top: 0;
     margin-right: 4px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .product-special__button {
@@ -228,10 +243,6 @@
     width: 292px;
     margin-right: 0;
     margin-left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 5px;
   }
 }
 
