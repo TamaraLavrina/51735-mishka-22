@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/open-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
@@ -14,7 +15,7 @@
 
 <body class="page__body">
   <header class="page-header page-header--picture-main-background">
-    <nav class="page-header__main-nav main-nav main-nav--opened main-nav--nojs">
+    <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
       <a class="main-nav__logo logo">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
@@ -66,7 +67,6 @@
         <li class="header-info__item">Распродажа</li>
       </ul>
       <p class="header-info__comment">Бесплатная доставка по России</p>
-    </div>
     </div>
   </header>
   <main class="page-main">
@@ -132,10 +132,14 @@
         <!--контейнер для картинок-->
         <div class="product-special__product-image product-image">
           <picture>
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-triple-set-desktop@1x.webp 1x, img/product-triple-set-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/product-triple-set-tablet@1x.webp 1x, img/product-triple-set-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/product-triple-set-mobile-1.webp 1x, img/product-triple-set-mobile-1@2x.webp 2x">
-            <source media="(min-width: 1150px)" srcset="img/product-triple-set-desktop@1x.jpg 1x, img/product-triple-set-desktop@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 1150px)"
+              srcset="img/product-triple-set-desktop@1x.webp 1x, img/product-triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/product-triple-set-tablet@1x.webp 1x, img/product-triple-set-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/product-triple-set-mobile-1.webp 1x, img/product-triple-set-mobile-1@2x.webp 2x">
+            <source media="(min-width: 1150px)"
+              srcset="img/product-triple-set-desktop@1x.jpg 1x, img/product-triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="img/product-triple-set-tablet@1x.jpg 1x, img/product-triple-set-tablet@2x.jpg 2x">
             <img class="product-image" src="img/product-triple-set-mobile-1.jpg"
@@ -184,7 +188,8 @@
           <li class="reviews__item slider-item">
             <blockquote>
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-                лайков, как у&nbsp;популярных&nbsp;инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке,&nbsp;и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                лайков, как у&nbsp;популярных&nbsp;инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в
+                Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <div class="reviews__author">
                 <cite class="reviews__author-name">Анастасия Красильникова</cite>
                 <p class="reviews__author-nickname">@misssssiskras</p>
@@ -200,6 +205,7 @@
             aria-label="Вперед"></button>
         </p>
         <a class="reviews__write-us button" href="form.html">Написать</a>
+      </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
@@ -212,19 +218,20 @@
         <div class="contacts__item">
           <p class="contacts__head">адрес:</p>
           <address class="contacts__address">
-            г. Санкт-Петербург ул.&nbsp;Большая&nbsp;Конюшенная д. 19/8, офис 101
+            г. Санкт-Петербург ул.&nbsp;Большая&nbsp;Конюшенная д.&nbsp;19/8, офис 101
           </address>
         </div>
       </div>
       <div class="contacts__map">
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.09256790339!2d30.320014976165776!3d59.939670591093446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620807709610!5m2!1sru!2sru"
-        style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.09256790339!2d30.320014976165776!3d59.939670591093446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620807709610!5m2!1sru!2sru"
+          style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <a class="contacts__button button" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper" href="#">
+    <div class="page-footer__wrapper">
       <a class="page-footer__logo logo">
         <svg class="logo__image" width="102" height="34">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
@@ -241,18 +248,18 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.facebook.com/htmlacademy">
-                <svg class="social__icon" width="15" height="29">
-                  <use xlink:href="img/sprite.svg#facebook"></use>
-                </svg>
-                </a>
+              <svg class="social__icon" width="15" height="29">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.twitter.com/htmlacademy">
-                <svg class="social__icon" width="24" height="20">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
-                </svg>
+              <svg class="social__icon" width="24" height="20">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
 
-              </a>
+            </a>
           </li>
         </ul>
       </div>
@@ -268,23 +275,24 @@
   </footer>
   <section class="modal">
     <div class="modal__container">
-    <form action="#" method="POST">
-      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
-      <p> Выберите размер:</p>
-      <div class="size-chooser">
-        <input class="size-chooser__item visually-hidden" type="radio" name="size" id="size_1" value="S">
-        <label class="size-chooser__label" for="size_1">S</label>
+      <form action="#" method="POST">
+        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+        <p> Выберите размер:</p>
+        <div class="size-chooser">
+          <input class="size-chooser__item visually-hidden" type="radio" name="size" id="size_1" value="S">
+          <label class="size-chooser__label" for="size_1">S</label>
 
-        <input class="size-chooser__item visually-hidden" type="radio" name="size" id="size_2" value="M">
-        <label class="size-chooser__label" for="size_2">M</label>
+          <input class="size-chooser__item visually-hidden" type="radio" name="size" id="size_2" value="M">
+          <label class="size-chooser__label" for="size_2">M</label>
 
-        <input checked class="size-chooser__item visually-hidden" type="radio" name="size" id="size_3" value="L">
-        <label class="size-chooser__label" for="size_3">L</label>
-      </div>
-      <button class="modal__button modal__button--add button" type="submit">Добавить</button>
-    </form>
-  </div>
+          <input checked class="size-chooser__item visually-hidden" type="radio" name="size" id="size_3" value="L">
+          <label class="size-chooser__label" for="size_3">L</label>
+        </div>
+        <button class="modal__button modal__button--add button" type="submit">Добавить</button>
+      </form>
+    </div>
   </section>
   <script src="js/script.min.js"></script>
 </body>
+
 </html>

@@ -10,6 +10,7 @@
   @media (min-width: $tablet-width) {
     padding-right: 0;
     padding-left: 0;
+    padding-bottom: 35px;
     padding-top: 28px;
     max-width: 668px;
     display: flex;
@@ -68,7 +69,7 @@
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  padding: 15px 0 18px;
+  padding: 18px 0 18px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

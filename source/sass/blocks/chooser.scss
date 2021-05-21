@@ -7,6 +7,7 @@
 .chooser--checkbox {
   @media (min-width: $tablet-width) {
     padding-top: 50px;
+    padding-bottom: 25px;
   }
 }
 
@@ -25,12 +26,15 @@
 }
 
 .chooser__list--radio {
+  margin-bottom: 18px;
+
   @media (min-width: $tablet-width) {
     padding: 18px 0;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 13px 0 21px;
+    padding: 17px 0 21px;
   }
 }
 

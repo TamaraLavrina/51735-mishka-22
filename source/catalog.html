@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/open-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
@@ -14,7 +15,7 @@
 
 <body class="page__body">
   <header class="page-header">
-    <nav class="page-header__main-nav main-nav main-nav--opened main-nav--nojs">
+    <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
       <a class="main-nav__logo logo" href="index.html">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
@@ -67,7 +68,6 @@
       </ul>
       <p class="header-info__comment">Бесплатная доставка по России</p>
     </div>
-    </div>
   </header>
   <main class="page-main">
     <section class="page-main__header">
@@ -84,7 +84,7 @@
                   srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
-                <source type="image/webp" src="img/product-1-catalog.webp" srcset="img/product-1-catalog@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-1-catalog.webp, img/product-1-catalog@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
                 <img class="product-item__img" src="img/product-1-catalog.jpg" srcset="img/product-1-catalog@2x.jpg 2x"
@@ -112,9 +112,8 @@
                 <source type="image/webp" media="(min-width: 1150px)"
                   srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.webp 2x">
-                <source type="image/webp" src="img/product-2-catalog-cart.webp"
-                  srcset="img/product-2-catalog@2x.webp 2x">
+                  srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-2-catalog-cart.webp, img/product-2-catalog@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
                 <img class="product-item__img" src="img/product-2-catalog-cart.jpg"
@@ -144,8 +143,7 @@
                   srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
-                <source type="image/webp" src="img/product-3-catalog-cart-toys.webp"
-                  srcset="img/product-3-catalog-cart-toys@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-3-catalog-cart-toys.webp, img/product-3-catalog-cart-toys@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                 <img class="product-item__img" src="img/product-3-catalog-cart-toys.jpg"
@@ -173,16 +171,18 @@
           <h2 class="manufacture-process__title title">Процесс производства</h2>
           <div class="manufacture-process__video video">
             <picture class="manufacture-process__picture">
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
-              <source  type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
-              <source  type="image/webp" src="img/video.weebp" srcset="img/video@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video.weebp, img/video@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="manufacture-process__video-background" src="img/video.jpg" srcset="img/video@2x.jpg 2x"
                 alt="замещающая картинка видеоплеер" width="260" height="150">
             </picture>
             <button type="button" class="video__button" aria-label="проиграть видео">
-              <img src="img/play.svg" width="101" heiht="77" alt="Кнопка начала проигрывания видео">
+              <img src="img/play.svg" width="101" height="77" alt="Кнопка начала проигрывания видео">
             </button>
           </div>
           <p class="manufacture-process__descript">
