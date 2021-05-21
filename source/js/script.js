@@ -12,17 +12,26 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-
 const buyButton = document.querySelector(".product-special__button");
 const cartPopup = document.querySelector(".modal");
 const cartAdd = cartPopup.querySelector(".modal__button");
 
-buyButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cartPopup.classList.add("modal--show");
-})
+if (buyButton) {
+  buyButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.add("modal--show");
+  });
+}
 
 cartAdd.addEventListener("click", function (evt) {
   evt.preventDefault();
   cartPopup.classList.remove("modal--show");
+});
+
+var buyButtons = document.querySelectorAll(".buy__add-cart");
+buyButtons.forEach(function (buyButton) {
+  buyButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.add("modal--show");
+  });
 });

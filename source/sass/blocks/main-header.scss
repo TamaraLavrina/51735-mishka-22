@@ -20,6 +20,7 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/hero-desktop@2x.jpg"); /*2 ная плотность, с ширины планшета */
+      background-size: 1150px auto;
     }
   }
   /*
@@ -38,7 +39,7 @@
       left: 0;
       background-position: center;
       background-repeat: repeat-x;
-      background-size: auto 24px;
+      background-size: 770px 24px;
     }
 
     @media (min-width: $desktop-width) {

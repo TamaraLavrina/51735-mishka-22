@@ -3,6 +3,7 @@
     padding-top: 55px;
     background-repeat: no-repeat;
     background-image: url("../img/review-napkin.jpg");
+    background-position: calc(50% - 209px) top;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/review-napkin@2x.jpg");
@@ -73,7 +74,7 @@
     background-size: auto 17px;
     left: -50px;
     right: -50px;
-    bottom: 5px;
+    bottom: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,6 +82,7 @@
     background-size: auto 23px;
     left: 0;
     right: 0;
+    bottom: 0;
   }
 }
 
@@ -146,9 +148,17 @@
 
 .reviews__author-name {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author-nickname {
@@ -204,7 +214,7 @@
 }
 
 .reviews__write-us {
-  margin-top: 20px;
+  margin-top: 25px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;

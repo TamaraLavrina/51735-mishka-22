@@ -4,7 +4,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 }
 
@@ -34,10 +34,13 @@
   width: 100%;
   padding: 16px 5px 13px 0;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 21px;
+  font-family: inherit;
 
   @media (min-width: $tablet-width) {
     padding-left: 17px;
+    font-size: 19px;
+    line-height: 23px;
   }
 }
 
