@@ -4,7 +4,6 @@
   line-height: 18px;
   font-size: 17px;
   font-weight: 700;
-  //margin-bottom: 21px;
   position: relative;
   user-select: none;
   padding: 10px 5px 10px 62px;
@@ -91,4 +90,22 @@
 
 .control__input + label:hover::before {
   border: 2px solid $primary-color-300;
+}
+
+.control__input:hover + label::before {
+  border: 2px solid $primary-color-300;
+}
+
+.control__input:focus + label::before {
+  border-color: $primary-color-300;
+  outline: thin dotted;
+}
+
+.control__input:active + label::before {
+  border: 2px solid rgba($color-black-900, 0.3);
+}
+
+.control__input--radio:focus + label::before {
+  border-color: $primary-color-300;
+  outline: thin dotted,;
 }

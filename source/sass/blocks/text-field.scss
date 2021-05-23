@@ -46,6 +46,7 @@
 
 .text-field__input--wide-text {
   padding-bottom: 17px;
+  padding-right: 40px;
 }
 
 .text-field__input-svg {
@@ -100,22 +101,6 @@
   }
 }
 
-.text-field__input:active .text-field__input-svg {
+.text-field__input:focus + .text-field__input-svg {
   color: $primary-color-200;
-}
-
-.element__label {
-  display: block;
-  line-height: 18px;
-  font-size: 17px;
-  font-weight: 700;
-  margin-bottom: 24px;
-  position: relative;
-  user-select: none;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    margin-left: 0;
-    padding-left: 0;
-  }
 }

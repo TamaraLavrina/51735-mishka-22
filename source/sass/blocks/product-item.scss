@@ -97,7 +97,14 @@
   }
 }
 
-.product-item__picture,
-.manufacture-process__picture {
+.product-item__picture {
   display: block;
+}
+
+.product-item:hover .product-item__title {
+  color: rgba($color-black-900, 0.6);
+}
+
+.product-item__link:active .product-item__title {
+  color: rgba($color-black-900, 0.3);
 }

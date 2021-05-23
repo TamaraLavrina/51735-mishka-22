@@ -63,8 +63,16 @@
     </nav>
     <div class="page-header__info header-info">
       <ul class="header-info__list">
-        <li class="header-info__item">Новые поступления</li>
-        <li class="header-info__item">Распродажа</li>
+        <li class="header-info__item">
+          <a href="#">
+            Новые поступления
+          </a>
+        </li>
+        <li class="header-info__item">
+          <a href="#">
+            Распродажа
+          </a>
+        </li>
       </ul>
       <p class="header-info__comment">Бесплатная доставка по России</p>
     </div>
@@ -92,7 +100,7 @@
               </picture>
             </a>
             <div class="product-item__description">
-              <a href="#">
+              <a class="product-item__link" href="#">
                 <h3 class="product-item__title title">Зайчик-попрыгайчик</h3>
               </a>
               <p class="product-item__property">Рост 30 см, вес 200 г</p>
@@ -122,7 +130,7 @@
               </picture>
             </a>
             <div class="product-item__description">
-              <a href="#">
+              <a class="product-item__link" href="#">
                 <h3 class="product-item__title title">Корзинка для белья</h3>
               </a>
               <p class="product-item__property">Диаметр 15 см, высота 10 см</p>
@@ -143,7 +151,8 @@
                   srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/product-3-catalog-cart-toys.webp, img/product-3-catalog-cart-toys@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/product-3-catalog-cart-toys.webp, img/product-3-catalog-cart-toys@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                 <img class="product-item__img" src="img/product-3-catalog-cart-toys.jpg"
@@ -152,7 +161,7 @@
               </picture>
             </a>
             <div class="product-item__description">
-              <a href="#">
+              <a class="product-item__link" href="#">
                 <h3 class="product-item__title title">Большая корзинка для&nbsp;игрушек</h3>
               </a>
               <p class="product-item__property">Диаметр 30 см, высота 30 см</p>
@@ -203,31 +212,31 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link" href="https://www.instagram.com/htmlacademy" aria-label="HTML Academy в Инстаграме">
               <svg class="social__icon" width="22" height="21">
                 <use xlink:href="img/sprite.svg#insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link" href="https://www.facebook.com/htmlacademy" aria-label="HTML Academy в Фейсбуке">
               <svg class="social__icon" width="15" height="29">
                 <use xlink:href="img/sprite.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.twitter.com/htmlacademy">
+            <a class="social__link" href="https://www.twitter.com/htmlacademy" aria-label="HTML Academy в Твиттере">
               <svg class="social__icon" width="24" height="20">
                 <use xlink:href="img/sprite.svg#twitter"></use>
               </svg>
-
             </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="HTML Academy Онлайн‑курс Адаптивная вёрстка и автоматизация">
           <span class="copyright__text">Разработано</span>
           <svg class="copyright__icon" width="27" height="35">
             <use xlink:href="img/sprite.svg#academy"></use>

@@ -23,11 +23,7 @@
       background-size: 1150px auto;
     }
   }
-  /*
-  @media (min-width: $desktop-width) {
-    background-size: cover;
-  }
-  */
+
   &::after {
     @media (min-width: $tablet-width) {
       content: "";

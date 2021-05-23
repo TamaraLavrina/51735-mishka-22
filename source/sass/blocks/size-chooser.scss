@@ -10,7 +10,6 @@
   }
 }
 
-
 .size-chooser__label {
   display: block;
   width: 83px;
@@ -39,4 +38,8 @@
 
 .size-chooser__label:hover {
   border-color: rgba($color-lightgrey-300, 0.3);
+}
+
+.size-chooser__item:focus .size-chooser__label {
+  border-color: $color-lightgrey-300 thin dotted;
 }
