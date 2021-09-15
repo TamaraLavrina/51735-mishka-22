@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 # Личный проект «Мишка» 
 
 * Студент: [Тамара Верещак](https://up.htmlacademy.ru/adaptive/22/user/51735).
